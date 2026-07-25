@@ -1,0 +1,19 @@
+{
+  "canonicas": {
+    "energia": "Energía limpia",
+    "agricultura": "Agricultura y alimentación",
+    "agua": "Agua",
+    "residuos": "Residuos y economía circular",
+    "clima-salud": "Cambio climático y salud",
+    "sostenibilidad": "Desarrollo sostenible"
+  },
+  "default": "sostenibilidad",
+  "mapeo": {
+    "energia": ["energia", "solar", "eolica", "hidraulica", "hidrogeno", "renovable"],
+    "agricultura": ["agricultura", "permacultura", "labranza", "agrosilvicultura", "hugelkultur", "chinampas", "cultivo", "plato", "alimentacion", "jardines"],
+    "agua": ["agua", "aguas grises", "hidrico"],
+    "residuos": ["basura", "residuo", "economia circular", "panales", "plastico", "reciclaje"],
+    "clima-salud": ["salud", "cambio climatico", "carbono", "clima"],
+    "sostenibilidad": ["sostenible", "sustentab", "valor compartido", "desarrollo", "latinoamerica", "mexico"]
+  }
+}
