@@ -60,7 +60,9 @@
 <li>Comunidad</li>
 </ul></div>
  <div class="caja-sub"><b>Únete a la comunidad</b>
- <span>Lo nuevo de RGNERA sale primero en Instagram.</span><a class="btn-olivo" style="display:inline-block" href="https://www.instagram.com/rgnera.mx/" target="_blank" rel="noopener">Sígueme en Instagram — el newsletter viene en camino</a></div>
+ <span>Recibe lo nuevo de RGNERA directo en tu correo.</span><form class="news-form" onsubmit="event.preventDefault();location.href='https://rgnera.substack.com/subscribe?email='+encodeURIComponent(this.correo.value)">
+   <input type="email" name="correo" required placeholder="tu@correo.com" aria-label="Tu correo">
+   <button class="btn-olivo" type="submit">Suscribirme</button></form></div>
 </article>
 </main>
 <footer>
