@@ -9,6 +9,7 @@ Uso:  python build.py
 import json, os, re, shutil, unicodedata, html
 from datetime import date
 from pathlib import Path
+from urllib.parse import unquote
 
 import markdown as md
 
@@ -109,6 +110,15 @@ def cargar_posts():
             lambda m: m.group(1) + (SITE["base"] + IMG_MAP[limpia_wix(m.group(2))]
                                     if limpia_wix(m.group(2)) in IMG_MAP else m.group(2)) + m.group(3),
             p["full_text_markdown"])
+        # el template ya pone el H1: si el cuerpo migrado repite el título como H1,
+        # se quita; cualquier otro H1 inicial se demota a H2
+        mkd = p["full_text_markdown"].lstrip()
+        m1 = re.match(r"#\s+([^\n]+)\n+", mkd)
+        if m1:
+            if slugify(m1.group(1)) == slugify(p["title"]):
+                p["full_text_markdown"] = mkd[m1.end():]
+            else:
+                p["full_text_markdown"] = "## " + mkd[2:]
         p["slug"] = f.stem
         p["fecha"] = parse_fecha(p.get("date", ""))
         p["cat"] = categoria_de(p)
@@ -151,9 +161,10 @@ def cargar_posts():
 
 
 # ---------------------------------------------------------------- plantillas
-def head(titulo, desc, ruta="", og_img=""):
-    canon = f"{SITE['base']}/{ruta}" if ruta else SITE["base"]
+def head(titulo, desc, ruta="", og_img="", og_type="website", noindex=False):
+    canon = f"{SITE['base']}/{ruta}" if ruta else SITE["base"] + "/"
     og = og_img or f"{SITE['base']}/assets/img/og.png"
+    robots = '<meta name="robots" content="noindex">\n' if noindex else f'<link rel="canonical" href="{canon}">\n'
     return f"""<!DOCTYPE html>
 <html lang="es-MX">
 <head>
@@ -161,11 +172,14 @@ def head(titulo, desc, ruta="", og_img=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{canon}">
-<meta property="og:title" content="{e(titulo)}">
+{robots}<meta property="og:title" content="{e(titulo)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:image" content="{og}">
-<meta property="og:type" content="website">
+<meta property="og:url" content="{canon}">
+<meta property="og:type" content="{og_type}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{e(titulo)}">
+<meta name="twitter:image" content="{og}">
 <link rel="icon" type="image/png" sizes="32x32" href="{SITE['base']}/assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="{SITE['base']}/assets/img/favicon-180.png">
 <link rel="alternate" type="application/rss+xml" title="RGNERA" href="{SITE['base']}/feed.xml">
@@ -174,7 +188,8 @@ def head(titulo, desc, ruta="", og_img=""):
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{SITE['base']}/assets/estilo.css">
 </head>
-<body>"""
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>"""
 
 
 def header(activo=""):
@@ -185,7 +200,7 @@ def header(activo=""):
 <header class="topbar">
  <div class="shell">
   <a class="marca" href="{b}/"><img src="{b}/assets/img/emblema.png" alt="" width="34" height="34"><b>RGNERA</b></a>
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" aria-label="Principal">
    <a href="{b}/"{cl('inicio')}>Inicio</a>
    <a href="{b}/articulos/"{cl('articulos')}>Artículos</a>
    <a href="{b}/videos/"{cl('videos')}>Videos</a>
@@ -195,7 +210,8 @@ def header(activo=""):
   <a class="btn-calc" href="{b}/calculadora/">Calcular mi huella</a>
   <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('abierto')">☰</button>
  </div>
-</header>"""
+</header>
+<main id="contenido">"""
 
 
 def form_news(centro=False):
@@ -210,6 +226,7 @@ def form_news(centro=False):
 def footer():
     b = SITE["base"]
     return f"""
+</main>
 <footer>
  <div class="shell">
   <div>
@@ -275,8 +292,8 @@ def pagina_home(posts, videos):
   <a class="link-sec" href="{b}/articulos/">Leer artículos</a>
  </div>
  <div class="news-banda">
-  <div class="texto"><b>No te pierdas ni un post</b>
-  <span>Lo nuevo de RGNERA, directo a tu correo. Sin spam.</span></div>
+  <div class="texto"><b>{"No te pierdas ni un artículo" if SITE.get("substack") else "Únete a la comunidad"}</b>
+  <span>{"Lo nuevo de RGNERA, directo a tu correo. Sin spam." if SITE.get("substack") else "El newsletter viene en camino; mientras tanto, lo nuevo sale primero en Instagram."}</span></div>
   {form_news()}
  </div>
 </section>""")
@@ -328,7 +345,7 @@ def pagina_articulos(posts, cat=None):
     out.append(f"""
 <section class="shell cab-seccion">
  <h1>{e(titulo)}</h1>
- <p>El archivo completo de la biblioteca: {len(lista)} artículo{'s' if len(lista) != 1 else ''}.</p>
+ <p>{f"{len(lista)} artículo{'s' if len(lista) != 1 else ''} sobre {titulo.lower()}." if cat else f"El archivo completo de la biblioteca: {len(lista)} artículo{'s' if len(lista) != 1 else ''}."}</p>
  <div class="filtros">{''.join(filtros)}</div>
 </section>
 <section class="shell fila"><div class="grid">{''.join(tarjeta(p) for p in lista)}</div></section>""")
@@ -339,13 +356,14 @@ def pagina_articulos(posts, cat=None):
 def pagina_post(p, ant, sig):
     b = SITE["base"]
     cuerpo = md.markdown(p["full_text_markdown"], extensions=["extra"])
+    cuerpo = re.sub(r"<!--.*?-->", "", cuerpo, flags=re.S)
     portada = f'<div class="portada"><img src="{e(p["portada"])}" alt="{e(p["title"])}"></div>' if p["portada"] else ""
     nav = ""
     if ant or sig:
         izq = f'<a href="{b}/articulos/{ant["slug"]}/">← {e(ant["title"])}</a>' if ant else "<span></span>"
         der = f'<a href="{b}/articulos/{sig["slug"]}/" style="text-align:right">{e(sig["title"])} →</a>' if sig else "<span></span>"
         nav = f'<nav class="prevnext">{izq}{der}</nav>'
-    out = [head(f"{p['title']} — RGNERA", p["extracto"], f"articulos/{p['slug']}/", p["portada"]),
+    out = [head(f"{p['title']} — RGNERA", p["extracto"], f"articulos/{p['slug']}/", p["portada"], og_type="article"),
            header("articulos")]
     out.append(f"""
 <article class="articulo">
@@ -360,7 +378,7 @@ def pagina_post(p, ant, sig):
  {portada}
  <div class="prosa">{cuerpo}</div>
  <div class="caja-sub"><b>¿Te sirvió este artículo?</b>
- <span>Recibe lo nuevo de RGNERA directo en tu correo.</span>{form_news(True)}</div>
+ <span>{"Recibe lo nuevo de RGNERA directo en tu correo." if SITE.get("substack") else "Sígueme en Instagram para no perderte lo que viene."}</span>{form_news(True)}</div>
 </article>
 {nav}""")
     out.append(footer())
@@ -377,14 +395,18 @@ def pagina_calculadora():
  <h1>Calcula tu huella de carbono</h1>
  <p>Responde con tus gastos del mes y obtén tu huella en CO₂e con metodología insumo-producto y datos oficiales mexicanos (MIP 2018 de INEGI + inventario INECC). Toma un minuto.</p>
 </section>
-<iframe id="marco-calc" src="{b}/huella/" title="Calculadora de huella ambiental RGNERA" height="5400"></iframe>
+<iframe id="marco-calc" src="{b}/huella/" title="Calculadora de huella de carbono RGNERA" height="5400"></iframe>
 <p class="calc-nota">Metodología abierta — <a href="{SITE['repo_calc']}" target="_blank" rel="noopener">ver el código y las fuentes en GitHub</a></p>
 <script>
 (function(){{
- var f=document.getElementById('marco-calc');
+ var f=document.getElementById('marco-calc'),previa=0,estable=0,timer=null;
  function ajusta(){{try{{var d=f.contentDocument||f.contentWindow.document;
-  if(d&&d.body)f.style.height=(d.documentElement.scrollHeight+40)+'px';}}catch(e){{}}}}
- f.addEventListener('load',function(){{ajusta();setInterval(ajusta,800);}});
+  if(d&&d.documentElement){{var h=d.documentElement.scrollHeight;
+   if(h===previa){{if(++estable>=6&&timer){{clearInterval(timer);timer=null;}}}}
+   else{{previa=h;estable=0;f.style.height=(h+40)+'px';}}}}}}catch(e){{}}}}
+ function arranca(){{estable=0;if(!timer)timer=setInterval(ajusta,800);ajusta();}}
+ f.addEventListener('load',arranca);
+ window.addEventListener('resize',arranca);
 }})();
 </script>""")
     out.append(footer())
@@ -399,7 +421,7 @@ def pagina_acerca(texto_md):
  <h1>Acerca de RGNERA</h1>
  <div class="prosa">{cuerpo}</div>
  <div class="caja-sub"><b>Únete a la comunidad</b>
- <span>Recibe lo nuevo de RGNERA directo en tu correo.</span>{form_news(True)}</div>
+ <span>{"Recibe lo nuevo de RGNERA directo en tu correo." if SITE.get("substack") else "Lo nuevo de RGNERA sale primero en Instagram."}</span>{form_news(True)}</div>
 </article>""")
     out.append(footer())
     return "".join(out)
@@ -416,7 +438,7 @@ def pagina_videos(videos):
     else:
         cuerpo = f"""<section class="shell fila"><div class="news-banda">
  <div class="texto"><b>Los videos están en mudanza</b>
- <span>Estamos moviendo «Plástico como recurso» y lo nuevo a su canal definitivo. Mientras tanto, el mejor contenido está en los artículos.</span></div>
+ <span>Estamos moviendo «Plástico como recurso» a su nuevo canal. Vuelve pronto — mientras, te espera todo el archivo de la biblioteca.</span></div>
  <a class="btn-olivo" style="display:inline-block" href="{b}/articulos/">Ver artículos</a>
 </div></section>"""
     out.append(f"""
@@ -429,7 +451,7 @@ def pagina_videos(videos):
 
 def pagina_404():
     b = SITE["base"]
-    out = [head("Página no encontrada — RGNERA", "Esta página no existe.", "404.html"), header("")]
+    out = [head("Página no encontrada — RGNERA", "Esta página no existe.", "404.html", noindex=True), header("")]
     out.append(f"""
 <section class="shell cab-seccion" style="text-align:center;padding-bottom:60px">
  <h1>No encontramos esa página</h1>
@@ -504,7 +526,7 @@ def main():
         vieja = p.get("url", "")
         m = re.search(r"/post/(.+)$", vieja)
         if m:
-            dv = DOCS / "post" / m.group(1)
+            dv = DOCS / "post" / unquote(m.group(1))
             dv.mkdir(parents=True, exist_ok=True)
             dv.joinpath("index.html").write_text(
                 redirect_stub(f"{SITE['base']}/articulos/{p['slug']}/"), encoding="utf-8")
@@ -524,7 +546,10 @@ def main():
     calc = Path(SITE["calc_local"]) if SITE.get("calc_local") else None
     if calc and calc.exists():
         (DOCS / "huella").mkdir()
-        shutil.copy(calc, DOCS / "huella" / "index.html")
+        chtml = calc.read_text(encoding="utf-8")
+        chtml = chtml.replace("</head>",
+            f'<link rel="canonical" href="{SITE["base"]}/calculadora/">\n</head>', 1)
+        (DOCS / "huella" / "index.html").write_text(chtml, encoding="utf-8")
     if SITE.get("cname"):
         (DOCS / "CNAME").write_text(SITE["cname"] + "\n", encoding="utf-8")
 

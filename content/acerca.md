@@ -1,24 +1,22 @@
-Bienvenido a RGNERA, primero que nada gracias por estar aquí.
+Bienvenido a RGNERA. Primero que nada, gracias por estar aquí.
 
-Somos un grupo de personas amantes de la vida y del planeta en el que vivimos. Es por eso que, creamos este espacio para ti y para nosotros.
+Somos un grupo de personas amantes de la vida y del planeta en el que vivimos. Por eso creamos este espacio, para ti y para nosotros.
 
-En RGNERA encontrarás una biblioteca de contenidos sustentables que te ayudarán a entender de una manera más fácil lo que se vive actualmente en nuestro planeta.
+En RGNERA encontrarás una biblioteca de contenidos sustentables que te ayudarán a entender, de una manera más fácil, lo que vive actualmente nuestro planeta.
 
-Te invitamos a formar parte de nosotros y crecer esta comunidad que sabemos que, si sigue creciendo, lograremos que la tierra tenga un respiro, esperanza y como forma de agradecimiento nos de la oportunidad de seguir disfrutando de las maravillas que nos da día con día.
+Te invitamos a formar parte y a hacer crecer esta comunidad. Sabemos que, si seguimos creciendo, lograremos darle a la Tierra un respiro y esperanza — y que, como agradecimiento, nos dé la oportunidad de seguir disfrutando de las maravillas que nos regala día con día.
 
-Sigamos de la mano por este camino, cambiemos nuestro rumbo y acuérdate... Siempre agradécele a tu Poder Superior.
+Sigamos de la mano por este camino, cambiemos nuestro rumbo y acuérdate… siempre agradécele a tu Poder Superior.
 
-## VISIÓN
+## Nuestra visión
 
-- Buscamos ser una comunidad líder en el desarrollo sustentable en México, tanto en el sector público como privado.
-- Posicionarnos como un lugar donde se crean vidas profesionales sólidas y amistades duraderas, donde se promueve el aprendizaje.
-- Lograr ser una empresa donde se busca el diálogo amable para encontrar soluciones congruentes e innovadoras, promoviendo que nuestra gente esté abierta a compartir nuevas ideas.
+- Ser una comunidad líder en el desarrollo sustentable en México.
+- Ser un lugar donde se promueve el aprendizaje y se crean amistades duraderas.
+- Buscar siempre el diálogo amable para encontrar soluciones congruentes e innovadoras, con una comunidad abierta a compartir nuevas ideas.
 
-## VALORES
+## Nuestros valores
 
 - Honestidad
-- Responsabilidad Social
-- Disponibilidad
-- Puntualidad
-- Profesionalismo
-- Conciencia Moral
+- Responsabilidad social
+- Conciencia
+- Comunidad
