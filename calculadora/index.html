@@ -5,66 +5,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Calculadora de huella de carbono — RGNERA</title>
 <meta name="description" content="Calcula tu huella de carbono personal mensual con datos mexicanos (MIP 2018 INEGI + INECC). Gratis y en un minuto.">
-<link rel="canonical" href="http://localhost:8765/calculadora/">
+<link rel="canonical" href="https://pablosels.github.io/rgnera-web/calculadora/">
 <meta property="og:title" content="Calculadora de huella de carbono — RGNERA">
 <meta property="og:description" content="Calcula tu huella de carbono personal mensual con datos mexicanos (MIP 2018 INEGI + INECC). Gratis y en un minuto.">
-<meta property="og:image" content="http://localhost:8765/assets/img/og.png">
+<meta property="og:image" content="https://pablosels.github.io/rgnera-web/assets/img/og.png">
+<meta property="og:url" content="https://pablosels.github.io/rgnera-web/calculadora/">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:8765/assets/img/favicon-32.png">
-<link rel="apple-touch-icon" href="http://localhost:8765/assets/img/favicon-180.png">
-<link rel="alternate" type="application/rss+xml" title="RGNERA" href="http://localhost:8765/feed.xml">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de huella de carbono — RGNERA">
+<meta name="twitter:image" content="https://pablosels.github.io/rgnera-web/assets/img/og.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pablosels.github.io/rgnera-web/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="https://pablosels.github.io/rgnera-web/assets/img/favicon-180.png">
+<link rel="alternate" type="application/rss+xml" title="RGNERA" href="https://pablosels.github.io/rgnera-web/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="http://localhost:8765/assets/estilo.css">
+<link rel="stylesheet" href="https://pablosels.github.io/rgnera-web/assets/estilo.css">
 </head>
 <body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
 <header class="topbar">
  <div class="shell">
-  <a class="marca" href="http://localhost:8765/"><img src="http://localhost:8765/assets/img/emblema.png" alt="" width="34" height="34"><b>RGNERA</b></a>
-  <nav class="nav" id="nav">
-   <a href="http://localhost:8765/">Inicio</a>
-   <a href="http://localhost:8765/articulos/">Artículos</a>
-   <a href="http://localhost:8765/videos/">Videos</a>
-   <a href="http://localhost:8765/acerca/">Acerca</a>
+  <a class="marca" href="https://pablosels.github.io/rgnera-web/"><img src="https://pablosels.github.io/rgnera-web/assets/img/emblema.png" alt="" width="34" height="34"><b>RGNERA</b></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+   <a href="https://pablosels.github.io/rgnera-web/">Inicio</a>
+   <a href="https://pablosels.github.io/rgnera-web/articulos/">Artículos</a>
+   <a href="https://pablosels.github.io/rgnera-web/videos/">Videos</a>
+   <a href="https://pablosels.github.io/rgnera-web/acerca/">Acerca</a>
   </nav>
   <span class="empuje"></span>
-  <a class="btn-calc" href="http://localhost:8765/calculadora/">Calcular mi huella</a>
+  <a class="btn-calc" href="https://pablosels.github.io/rgnera-web/calculadora/">Calcular mi huella</a>
   <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('abierto')">☰</button>
  </div>
 </header>
+<main id="contenido">
 <section class="shell calc-intro">
  <h1>Calcula tu huella de carbono</h1>
  <p>Responde con tus gastos del mes y obtén tu huella en CO₂e con metodología insumo-producto y datos oficiales mexicanos (MIP 2018 de INEGI + inventario INECC). Toma un minuto.</p>
 </section>
-<iframe id="marco-calc" src="http://localhost:8765/huella/" title="Calculadora de huella ambiental RGNERA" height="5400"></iframe>
+<iframe id="marco-calc" src="https://pablosels.github.io/rgnera-web/huella/" title="Calculadora de huella de carbono RGNERA" height="5400"></iframe>
 <p class="calc-nota">Metodología abierta — <a href="https://github.com/pablosels/rgnera-huella" target="_blank" rel="noopener">ver el código y las fuentes en GitHub</a></p>
 <script>
 (function(){
- var f=document.getElementById('marco-calc');
+ var f=document.getElementById('marco-calc'),previa=0,estable=0,timer=null;
  function ajusta(){try{var d=f.contentDocument||f.contentWindow.document;
-  if(d&&d.body)f.style.height=(d.documentElement.scrollHeight+40)+'px';}catch(e){}}
- f.addEventListener('load',function(){ajusta();setInterval(ajusta,800);});
+  if(d&&d.documentElement){var h=d.documentElement.scrollHeight;
+   if(h===previa){if(++estable>=6&&timer){clearInterval(timer);timer=null;}}
+   else{previa=h;estable=0;f.style.height=(h+40)+'px';}}}catch(e){}}
+ function arranca(){estable=0;if(!timer)timer=setInterval(ajusta,800);ajusta();}
+ f.addEventListener('load',arranca);
+ window.addEventListener('resize',arranca);
 })();
 </script>
+</main>
 <footer>
  <div class="shell">
   <div>
-   <a class="marca" href="http://localhost:8765/"><img src="http://localhost:8765/assets/img/emblema_cream.png" alt="" width="34" height="34"><b>RGNERA</b></a>
+   <a class="marca" href="https://pablosels.github.io/rgnera-web/"><img src="https://pablosels.github.io/rgnera-web/assets/img/emblema_cream.png" alt="" width="34" height="34"><b>RGNERA</b></a>
    <p class="tag">Biblioteca digital de sustentabilidad. Artículos, herramientas y datos para darle un respiro al planeta.</p>
   </div>
   <div>
    <h4>Explora</h4>
-   <ul><li><a href="http://localhost:8765/articulos/">Artículos</a></li>
-   <li><a href="http://localhost:8765/calculadora/">Calculadora de huella</a></li>
-   <li><a href="http://localhost:8765/videos/">Videos</a></li>
-   <li><a href="http://localhost:8765/acerca/">Acerca</a></li></ul>
+   <ul><li><a href="https://pablosels.github.io/rgnera-web/articulos/">Artículos</a></li>
+   <li><a href="https://pablosels.github.io/rgnera-web/calculadora/">Calculadora de huella</a></li>
+   <li><a href="https://pablosels.github.io/rgnera-web/videos/">Videos</a></li>
+   <li><a href="https://pablosels.github.io/rgnera-web/acerca/">Acerca</a></li></ul>
   </div>
   <div>
    <h4>Conecta</h4>
    <ul><li><a href="https://www.instagram.com/rgnera.mx/" target="_blank" rel="noopener">Instagram</a></li>
    <li><a href="https://github.com/pablosels/rgnera-huella" target="_blank" rel="noopener">Metodología de la calculadora</a></li>
-   <li><a href="http://localhost:8765/feed.xml">RSS</a></li></ul>
+   <li><a href="https://pablosels.github.io/rgnera-web/feed.xml">RSS</a></li></ul>
   </div>
  </div>
  <div class="pie-legal"><div class="shell">
