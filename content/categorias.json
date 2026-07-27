@@ -1,11 +1,11 @@
 {
   "canonicas": {
-    "energia": "Energía limpia",
-    "agricultura": "Agricultura y alimentación",
+    "energia": "Energía Limpia",
+    "agricultura": "Agricultura y Alimentación",
     "agua": "Agua",
-    "residuos": "Residuos y economía circular",
-    "clima-salud": "Cambio climático y salud",
-    "sostenibilidad": "Desarrollo sostenible"
+    "residuos": "Residuos y Economía Circular",
+    "clima-salud": "Cambio Climático y Salud",
+    "sostenibilidad": "Desarrollo Sostenible"
   },
   "default": "sostenibilidad",
   "mapeo": {

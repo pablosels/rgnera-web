@@ -196,13 +196,21 @@ def header(activo=""):
     def cl(k):
         return ' class="activo"' if k == activo else ""
     b = SITE["base"]
+    temas = "".join(f'<a href="{b}/articulos/{ck}/">{e(cn)}</a>'
+                    for ck, cn in CATS["canonicas"].items())
     return f"""
 <header class="topbar">
  <div class="shell">
   <a class="marca" href="{b}/"><img src="{b}/assets/img/emblema.png" alt="" width="34" height="34"><b>RGNERA</b></a>
   <nav class="nav" id="nav" aria-label="Principal">
    <a href="{b}/"{cl('inicio')}>Inicio</a>
-   <a href="{b}/articulos/"{cl('articulos')}>Artículos</a>
+   <div class="has-sub">
+    <a href="{b}/articulos/"{cl('articulos')} aria-haspopup="true">Artículos <span class="flecha" aria-hidden="true">▾</span></a>
+    <div class="submenu">
+     <a href="{b}/articulos/" class="sub-todos">Todos los Artículos</a>
+     {temas}
+    </div>
+   </div>
    <a href="{b}/videos/"{cl('videos')}>Videos</a>
    <a href="{b}/acerca/"{cl('acerca')}>Acerca</a>
   </nav>

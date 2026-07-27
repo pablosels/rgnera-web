@@ -35,6 +35,17 @@ a{color:inherit;text-decoration:none}
 .nav a{color:var(--ink);padding:6px 2px;border-bottom:2px solid transparent}
 .nav a:hover{color:var(--olive)}
 .nav a.activo{color:var(--olive);border-bottom-color:var(--amber)}
+.has-sub{position:relative}
+.has-sub .flecha{font-size:10px;color:var(--salvia)}
+.submenu{display:none;position:absolute;top:100%;left:-14px;z-index:60;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:8px;min-width:250px}
+.has-sub:hover .submenu,.has-sub:focus-within .submenu{display:block}
+.submenu a{display:block;padding:9px 14px;border-radius:8px;font-size:14px;
+  border-bottom:none;color:var(--ink)}
+.submenu a:hover{background:var(--cream);color:var(--olive)}
+.submenu .sub-todos{font-weight:600;color:var(--olive);
+  border-bottom:1px solid var(--line);border-radius:8px 8px 0 0;margin-bottom:4px}
 .empuje{margin-left:auto}
 .btn-calc{background:var(--amber);color:var(--amber-ink);font-weight:600;
   font-size:14px;padding:9px 18px;border-radius:999px;white-space:nowrap;
@@ -194,6 +205,12 @@ footer ul a:hover{color:var(--amber)}
     border-bottom:1px solid var(--line);display:none}
   .nav.abierto{display:flex}
   .nav a{padding:12px 0;font-size:16px;width:100%}
+  .has-sub{width:100%}
+  .submenu{display:block;position:static;border:none;background:transparent;
+    padding:0 0 4px 16px;min-width:0}
+  .submenu a{padding:9px 0;font-size:15px}
+  .submenu .sub-todos{border-bottom:none;margin-bottom:0}
+  .has-sub .flecha{display:none}
   .menu-btn{display:block;background:none;border:none;cursor:pointer;
     font-size:26px;color:var(--olive);line-height:1;padding:4px 8px}
   .hero{padding:44px 0 30px}
