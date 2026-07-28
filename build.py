@@ -395,9 +395,10 @@ def pagina_post(p, ant, sig):
 
 def pagina_calculadora():
     b = SITE["base"]
-    out = [head("Calculadora de huella de carbono — RGNERA",
-                "Calcula tu huella de carbono personal mensual con datos mexicanos (MIP 2018 INEGI + INECC). Gratis y en un minuto.",
-                "calculadora/"), header("")]
+    out = [head("¿Sabes cuál es tu huella de carbono? Calcúlala en 1 minuto — RGNERA",
+                "Gratis y con datos oficiales de México (INEGI + INECC). Descubre cuánto pesa tu estilo de vida y por dónde empezar a bajarlo.",
+                "calculadora/",
+                og_img=f"{SITE['base']}/assets/img/og-calculadora.png"), header("")]
     out.append(f"""
 <section class="shell calc-intro">
  <h1>Calcula tu huella de carbono</h1>
