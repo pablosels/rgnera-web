@@ -154,7 +154,9 @@ def cargar_posts():
         p["cat"] = meta.get("categoria") if meta.get("categoria") in CATS["canonicas"] else categoria_de(p)
         p["extracto"] = meta.get("excerpt") or extracto_de(p["full_text_markdown"])
         p["lectura"] = min_lectura(p)
-        p["portada"] = meta.get("image", "")
+        # image con ruta raíz (/assets/...) hereda el dominio base, como los JSON
+        img = meta.get("image", "")
+        p["portada"] = SITE["base"] + img if img.startswith("/") else img
         posts.append(p)
     posts.sort(key=lambda p: p["fecha"], reverse=True)
     return posts

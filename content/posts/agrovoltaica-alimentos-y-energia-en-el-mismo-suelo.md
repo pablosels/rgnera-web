@@ -1,0 +1,29 @@
+---
+title: "Agrovoltaica: alimentos y energía en el mismo suelo"
+date: 2026-08-03
+categoria: energia
+author: Pablo Seldner
+excerpt: Paneles solares elevados sobre cultivos que dan sombra, ahorran agua y generan electricidad. La agrovoltaica propone que el campo levante dos cosechas a la vez.
+image: /assets/img/posts/agrovoltaica-alimentos-y-energia-en-el-mismo-suelo/00.jpg
+---
+
+La energía solar vive un crecimiento sin precedentes: el mundo tardó una década en instalar su primer teravatio de capacidad solar, menos de tres años en el segundo, y este año alcanzó el tercero [1]. Pero ese crecimiento acelerado abre una pregunta incómoda: ¿de dónde saldrá tanto espacio? Las grandes plantas solares suelen instalarse en terrenos planos, soleados y accesibles, exactamente el mismo tipo de suelo que necesita la agricultura. Ante la aparente competencia entre producir comida y producir electricidad, existe una propuesta que convierte el dilema en oportunidad: la agrovoltaica, es decir, cultivar y generar energía solar en el mismo terreno. En este artículo revisaremos de dónde viene la idea y qué dice la evidencia sobre sus beneficios.
+
+El concepto es más viejo de lo que parece. En 1982, los físicos alemanes Goetzberger y Zastrow propusieron elevar los colectores solares un par de metros sobre el suelo y separar las filas de paneles, de modo que abajo llegara suficiente luz para seguir cultivando [2]. La idea durmió casi tres décadas hasta que un equipo francés la retomó y acuñó el término "agrivoltaico": sus simulaciones mostraron que combinar paneles y cultivos podía aumentar la productividad total del terreno entre 35 y 73% comparado con dedicar tierras separadas a cada actividad [3]. Dicho de otra forma: una hectárea agrovoltaica produce más valor, en comida más electricidad, que media hectárea de cultivo junto a media hectárea de planta solar.
+
+Los beneficios van más allá del espacio, y son especialmente claros en climas áridos como el del norte de México. Un experimento en el desierto de Arizona encontró una relación de mutuo beneficio: la sombra de los paneles redujo el estrés de las plantas y la evaporación de agua del suelo —con chiles y jitomates produciendo igual o más que a cielo abierto—, mientras que los cultivos, al transpirar, enfriaron los paneles y los hicieron generar más electricidad [4]. En pastizales de Oregón, las zonas bajo paneles retuvieron más humedad y produjeron hasta 90% más biomasa al final de la temporada seca [5]. El mismo grupo de investigación estimó, con un modelo global, que los cultivos son precisamente el tipo de superficie donde los paneles solares rinden mejor —por su combinación de sol, temperaturas moderadas y viento— y que bastaría convertir menos del 1% de las tierras agrícolas del mundo en sistemas agrovoltaicos para compensar la demanda eléctrica global [6]. En Alemania, un proyecto piloto que combinó paneles elevados con trigo, papa y apio encontró que en el año extremadamente seco de 2018 varios cultivos rindieron más bajo los paneles que a cielo abierto [7].
+
+Como toda tecnología joven, la agrovoltaica tiene sus retos. Las estructuras elevadas cuestan más que las de una planta solar convencional; no todos los cultivos toleran la sombra —en climas templados y húmedos algunos rinden menos [8]—; la maquinaria agrícola necesita espacio para maniobrar entre las filas; y en muchos países la regulación no sabe todavía cómo clasificar un terreno que es granja y central eléctrica a la vez. La selección de cultivos es clave: hortalizas, frutos rojos y forrajes suelen beneficiarse de la sombra parcial, mientras que cereales de pleno sol pueden resentirla.
+
+Aun así, el potencial es enorme, sobre todo donde el agua escasea y el sol sobra: exactamente la condición de buena parte del territorio mexicano. La agrovoltaica no pide elegir entre el campo y la transición energética; propone que se ayuden mutuamente, con el agricultor cosechando dos veces del mismo suelo: una en alimentos y otra en kilowatts. En la carrera por descarbonizar la economía sin sacrificar la seguridad alimentaria, pocas ideas resultan tan elegantes como poner a las sandías y a los electrones a trabajar en equipo.
+
+## Referencias
+
+1. Bloomberg Green. (2026). *The world crossed a major solar milestone. Almost no one noticed*. Bloomberg, 3 de agosto de 2026.
+2. Goetzberger, A., & Zastrow, A. (1982). On the coexistence of solar-energy conversion and plant cultivation. *International Journal of Solar Energy*, 1(1), 55-69.
+3. Dupraz, C., Marrou, H., Talbot, G., Dufour, L., Nogier, A., & Ferard, Y. (2011). Combining solar photovoltaic panels and food crops for optimising land use: Towards new agrivoltaic schemes. *Renewable Energy*, 36(10), 2725-2732.
+4. Barron-Gafford, G. A., Pavao-Zuckerman, M. A., Minor, R. L., Sutter, L. F., Barnett-Moreno, I., Blackett, D. T., Thompson, M., Dimond, K., Gerlak, A. K., Nabhan, G. P., & Macknick, J. E. (2019). Agrivoltaics provide mutual benefits across the food–energy–water nexus in drylands. *Nature Sustainability*, 2(9), 848-855.
+5. Hassanpour Adeh, E., Selker, J. S., & Higgins, C. W. (2018). Remarkable agrivoltaic influence on soil moisture, micrometeorology and water-use efficiency. *PLoS ONE*, 13(11), e0203256.
+6. Adeh, E. H., Good, S. P., Calaf, M., & Higgins, C. W. (2019). Solar PV power potential is greatest over croplands. *Scientific Reports*, 9, 11442.
+7. Trommsdorff, M., Kang, J., Reise, C., Schindele, S., Bopp, G., Ehmann, A., Weselek, A., Högy, P., & Obergfell, T. (2021). Combining food and energy production: Design of an agrivoltaic system applied in arable and vegetable farming in Germany. *Renewable and Sustainable Energy Reviews*, 140, 110694.
+8. Weselek, A., Ehmann, A., Zikeli, S., Lewandowski, I., Schindele, S., & Högy, P. (2019). Agrophotovoltaic systems: Applications, challenges, and opportunities. A review. *Agronomy for Sustainable Development*, 39(4), 35.
