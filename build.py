@@ -158,6 +158,13 @@ def cargar_posts():
         img = meta.get("image", "")
         p["portada"] = SITE["base"] + img if img.startswith("/") else img
         posts.append(p)
+    # posts programados: fecha futura no se publica (RGNERA_FUTUROS=1 para preview)
+    if not os.environ.get("RGNERA_FUTUROS"):
+        pendientes = [p for p in posts if p["fecha"] > date.today()]
+        if pendientes:
+            print("programados (aún no salen):",
+                  ", ".join(f"{p['slug']} ({p['fecha']})" for p in sorted(pendientes, key=lambda p: p['fecha'])))
+        posts = [p for p in posts if p["fecha"] <= date.today()]
     posts.sort(key=lambda p: p["fecha"], reverse=True)
     return posts
 

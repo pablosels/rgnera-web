@@ -60,14 +60,14 @@ def portada(slug, kicker, lineas, title_size=88):
     print("OK", out / "00.jpg")
 
 
-portada("que-es-la-huella-de-carbono",
-        "CAMBIO CLIMÁTICO Y SALUD",
-        ["¿Qué es la huella", "de carbono?"])
-
-portada("que-es-el-analisis-de-ciclo-de-vida",
-        "DESARROLLO SOSTENIBLE",
-        ["¿Qué es el Análisis", "de Ciclo de Vida?"])
-
-portada("agrovoltaica-alimentos-y-energia-en-el-mismo-suelo",
-        "ENERGÍA LIMPIA",
-        ["Agrovoltaica: alimentos", "y energía en el", "mismo suelo"], title_size=76)
+if __name__ == "__main__":
+    import argparse
+    ap = argparse.ArgumentParser(
+        description="Portada de marca 1200x675 para un artículo. "
+                    'Ej: python portada.py mi-slug "AGUA" "Cosecha de lluvia:|el agua de tu techo" --size 76')
+    ap.add_argument("slug", help="carpeta destino en assets/img/posts/<slug>/00.jpg")
+    ap.add_argument("kicker", help="categoría en mayúsculas")
+    ap.add_argument("lineas", help="título con | separando las líneas")
+    ap.add_argument("--size", type=int, default=88, help="tamaño del título (default 88)")
+    a = ap.parse_args()
+    portada(a.slug, a.kicker, a.lineas.split("|"), a.size)
