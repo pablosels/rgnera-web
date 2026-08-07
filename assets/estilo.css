@@ -162,6 +162,25 @@ footer ul a:hover{color:var(--amber)}
 .prosa a{color:var(--olive);border-bottom:2px solid var(--amber)}
 .prosa blockquote{border-left:3px solid var(--amber);padding-left:18px;
   color:rgba(32,38,26,.75);font-style:italic;margin-bottom:1.35em}
+.compartir{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  flex-wrap:wrap;margin:38px 0 0;padding:16px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.compartir .etiqueta{font-family:var(--ff-ui);font-size:13.5px;font-weight:600;color:var(--olive)}
+.compartir .redes{display:flex;gap:8px;align-items:center}
+.compartir .red{display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+  background:var(--card);color:var(--olive);cursor:pointer;position:relative;
+  transition:background .15s ease,color .15s ease,border-color .15s ease}
+.compartir .red:hover{background:var(--olive);color:var(--cream);border-color:var(--olive)}
+.compartir .copiado{position:absolute;top:-30px;left:50%;transform:translateX(-50%);
+  background:var(--ink);color:var(--cream);font-family:var(--ff-ui);font-size:11.5px;
+  padding:4px 9px;border-radius:6px;white-space:nowrap}
+/* notas al pie de artículos */
+.prosa .footnote{font-size:15px;color:rgba(32,38,26,.8);border-top:1px solid var(--line);
+  margin-top:2em;padding-top:.6em}
+.prosa .footnote ol{margin-left:1.2em}
+.prosa .footnote li{margin-bottom:.6em}
+.prosa .footnote p{margin-bottom:.4em}
 .caja-sub{margin:50px 0 0;background:var(--card);border:1px solid var(--line);
   border-radius:14px;padding:26px 28px;text-align:center}
 .caja-sub b{font-family:var(--ff-display);font-size:20px;color:var(--olive);display:block}
