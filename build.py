@@ -9,7 +9,7 @@ Uso:  python build.py
 import json, os, re, shutil, unicodedata, html
 from datetime import date
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, quote
 
 import markdown as md
 
@@ -284,6 +284,41 @@ def tarjeta(p):
  </div></a>"""
 
 
+def compartir(p):
+    """Botones de compartir del artículo. Instagram no tiene URL de compartir
+    web (su API no lo permite), así que ese caso se cubre con 'copiar enlace':
+    el link se pega en stories o en la bio."""
+    url = f"{SITE['base']}/articulos/{p['slug']}/"
+    texto = p["title"]
+    u, t = quote(url, safe=""), quote(texto, safe="")
+    redes = [
+        ("X", f"https://twitter.com/intent/tweet?url={u}&text={t}",
+         '<path d="M18.2 2H21l-6.6 7.5L22 22h-6.1l-4.8-6.2L5.6 22H2.8l7-8L2 2h6.2l4.3 5.7L18.2 2Zm-1 18h1.7L7.9 3.8H6.1L17.2 20Z"/>'),
+        ("Facebook", f"https://www.facebook.com/sharer/sharer.php?u={u}",
+         '<path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/>'),
+        ("LinkedIn", f"https://www.linkedin.com/sharing/share-offsite/?url={u}",
+         '<path d="M6.9 21H3.4V9.2h3.5V21ZM5.1 7.6a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1ZM21 21h-3.5v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.9V9.2h3.3v1.6h.1a3.7 3.7 0 0 1 3.3-1.8c3.5 0 4.2 2.3 4.2 5.3V21Z"/>'),
+        ("WhatsApp", f"https://api.whatsapp.com/send?text={t}%20{u}",
+         '<path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.3.3c-.1.1-.2.3 0 .5.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.2.1.4.1.5-.1l.7-.9c.2-.2.3-.2.5-.1l2 .9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/>'),
+    ]
+    botones = "".join(
+        f'<a class="red" href="{href}" target="_blank" rel="noopener" aria-label="Compartir en {n}" title="Compartir en {n}">'
+        f'<svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true">{svg}</svg></a>'
+        for n, href, svg in redes)
+    return f"""
+<div class="compartir">
+ <span class="etiqueta">¿Te sirvió? Compártelo</span>
+ <div class="redes">{botones}
+  <button class="red copiar" type="button" data-url="{url}"
+    aria-label="Copiar enlace (para Instagram y donde quieras)"
+    title="Copiar enlace — para pegarlo en Instagram o donde quieras">
+   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
+   <span class="copiado" hidden>¡Copiado!</span>
+  </button>
+ </div>
+</div>"""
+
+
 def banda_calculadora():
     b = SITE["base"]
     return f"""
@@ -394,10 +429,31 @@ def pagina_post(p, ant, sig):
  </div>
  {portada}
  <div class="prosa">{cuerpo}</div>
+ {compartir(p)}
  <div class="caja-sub"><b>¿Te sirvió este artículo?</b>
  <span>{"Recibe lo nuevo de RGNERA directo en tu correo." if SITE.get("substack") else "Sígueme en Instagram para no perderte lo que viene."}</span>{form_news(True)}</div>
 </article>
 {nav}""")
+    out.append("""
+<script>
+document.querySelectorAll('.compartir .copiar').forEach(function(b){
+  b.addEventListener('click', function(){
+    var url = b.dataset.url, aviso = b.querySelector('.copiado');
+    function ok(){ aviso.hidden = false; setTimeout(function(){ aviso.hidden = true; }, 1800); }
+    function respaldo(){
+      var ta = document.createElement('textarea');
+      ta.value = url; ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch(e) {}
+      document.body.removeChild(ta); ok();
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(ok).catch(respaldo);
+    } else { respaldo(); }
+  });
+});
+</script>""")
     out.append(footer())
     return "".join(out)
 
