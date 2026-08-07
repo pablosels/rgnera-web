@@ -305,15 +305,22 @@ def compartir(p):
         f'<a class="red" href="{href}" target="_blank" rel="noopener" aria-label="Compartir en {n}" title="Compartir en {n}">'
         f'<svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true">{svg}</svg></a>'
         for n, href, svg in redes)
+    # Instagram no admite compartir por URL desde la web: su botón copia el
+    # enlace para pegarlo en una story o en la bio.
+    ig = ('<path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2a3.9 3.9 0 0 1-2.3 2.3c-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.9 3.9 0 0 1-2.3-2.3c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2A3.9 3.9 0 0 1 5 2.6c.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.05-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.35 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.05 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .35 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.05 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.35-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.05-1.1-.2-1.7-.4-2.1a3.5 3.5 0 0 0-.8-1.3 3.5 3.5 0 0 0-1.3-.8c-.4-.2-1-.35-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm6.3-8.3a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/>')
     return f"""
 <div class="compartir">
  <span class="etiqueta">¿Te sirvió? Compártelo</span>
- <div class="redes">{botones}
-  <button class="red copiar" type="button" data-url="{url}"
-    aria-label="Copiar enlace (para Instagram y donde quieras)"
-    title="Copiar enlace — para pegarlo en Instagram o donde quieras">
+ <div class="redes">
+  <button class="red copiar" type="button" data-url="{url}" data-aviso="Copiado — pégalo en tu story"
+    aria-label="Copiar enlace para Instagram" title="Instagram — copia el enlace para pegarlo en tu story o en la bio">
+   <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true">{ig}</svg>
+   <span class="copiado" hidden></span>
+  </button>{botones}
+  <button class="red copiar" type="button" data-url="{url}" data-aviso="¡Copiado!"
+    aria-label="Copiar enlace" title="Copiar enlace">
    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
-   <span class="copiado" hidden>¡Copiado!</span>
+   <span class="copiado" hidden></span>
   </button>
  </div>
 </div>"""
@@ -439,7 +446,8 @@ def pagina_post(p, ant, sig):
 document.querySelectorAll('.compartir .copiar').forEach(function(b){
   b.addEventListener('click', function(){
     var url = b.dataset.url, aviso = b.querySelector('.copiado');
-    function ok(){ aviso.hidden = false; setTimeout(function(){ aviso.hidden = true; }, 1800); }
+    aviso.textContent = b.dataset.aviso || '¡Copiado!';
+    function ok(){ aviso.hidden = false; setTimeout(function(){ aviso.hidden = true; }, 2200); }
     function respaldo(){
       var ta = document.createElement('textarea');
       ta.value = url; ta.setAttribute('readonly', '');
