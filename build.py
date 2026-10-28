@@ -221,6 +221,7 @@ def header(activo=""):
     </div>
    </div>
    <a href="{b}/videos/"{cl('videos')}>Videos</a>
+   <a href="{b}/empresas/"{cl('empresas')}>Empresas</a>
    <a href="{b}/acerca/"{cl('acerca')}>Acerca</a>
   </nav>
   <span class="empuje"></span>
@@ -255,6 +256,7 @@ def footer():
    <ul><li><a href="{b}/articulos/">Artículos</a></li>
    <li><a href="{b}/calculadora/">Calculadora de huella</a></li>
    <li><a href="{b}/videos/">Videos</a></li>
+   <li><a href="{b}/empresas/">Para empresas</a></li>
    <li><a href="{b}/acerca/">Acerca</a></li></ul>
   </div>
   <div>
@@ -479,6 +481,7 @@ def pagina_calculadora():
 </section>
 <iframe id="marco-calc" src="{b}/huella/" title="Calculadora de huella de carbono RGNERA" height="5400"></iframe>
 <p class="calc-nota">Metodología abierta — <a href="{SITE['repo_calc']}" target="_blank" rel="noopener">ver el código y las fuentes en GitHub</a></p>
+<p class="calc-nota">¿Tienes un negocio? <a href="{b}/empresas/">Mide la huella de tu empresa con tus facturas</a></p>
 <script>
 (function(){{
  var f=document.getElementById('marco-calc'),previa=0,estable=0,timer=null;
@@ -505,6 +508,66 @@ def pagina_acerca(texto_md):
  <div class="caja-sub"><b>Únete a la comunidad</b>
  <span>{"Recibe lo nuevo de RGNERA directo en tu correo." if SITE.get("substack") else "Lo nuevo de RGNERA sale primero en Instagram."}</span>{form_news(True)}</div>
 </article>""")
+    out.append(footer())
+    return "".join(out)
+
+
+def pagina_empresas(emp):
+    """Landing de la oferta B2B (reporte de huella de carbono). El contenido y los
+    precios viven en content/empresas.json para cambiarlos sin tocar código."""
+    b = SITE["base"]
+    correo = (f"mailto:{emp['contacto']}?subject={quote(emp['asunto'])}"
+              f"&body={quote(emp['cuerpo_correo'])}")
+    h, c = emp["hero"], emp["caso"]
+    tarjetas = lambda items: "".join(
+        f'<div class="emp-item"><h3>{e(i["titulo"])}</h3><p>{e(i["texto"])}</p></div>' for i in items)
+    pasos = "".join(f'<li><b>{e(p["titulo"])}</b><span>{e(p["texto"])}</span></li>' for p in emp["pasos"])
+    datos = "".join(f'<div class="emp-dato"><b>{e(d["cifra"])}</b><span>{e(d["texto"])}</span></div>'
+                    for d in c["datos"])
+    paquetes = "".join(f"""<div class="emp-precio{' destacado' if p.get('destacado') else ''}">
+  {'<span class="pill">El más completo</span>' if p.get('destacado') else ''}
+  <h3>{e(p['nombre'])}</h3>
+  <p class="emp-monto">{e(p['precio'])} <small>{e(p['periodo'] + ' ') if p.get('periodo') else ''}+ IVA</small></p>
+  <p class="emp-para">{e(p['para'])}</p>
+  <ul>{''.join(f'<li>{e(i)}</li>' for i in p['incluye'])}</ul>
+ </div>""" for p in emp["paquetes"])
+    faq = "".join(f'<details><summary>{e(f["p"])}</summary><p>{e(f["r"])}</p></details>' for f in emp["faq"])
+    pdf = ""
+    if emp.get("pdf") and (ASSETS / emp["pdf"].replace("/assets/", "", 1)).exists():
+        pdf = f'<a class="link-claro" href="{b}{emp["pdf"]}" download>Descargar la propuesta (PDF)</a>'
+    out = [head("Huella de carbono para empresas y restaurantes — RGNERA",
+                "Reporte de huella de carbono (alcances 1, 2 y 3) hecho con tus facturas y datos oficiales "
+                "mexicanos. Desde $14,900 más IVA, en 2 a 3 semanas.", "empresas/"), header("empresas")]
+    out.append(f"""
+<section class="shell hero emp-hero">
+ <p class="eyebrow">{e(h['eyebrow'])}</p>
+ <h1>{e(h['titulo'])}</h1>
+ <p>{e(h['texto'])}</p>
+ <div class="acciones"><a class="btn-primario" href="{correo}">Quiero mi reporte</a>
+ <a class="link-sec" href="#precios">Ver precios</a></div>
+</section>
+<section class="shell fila"><div class="fila-cab"><h2>Qué recibes</h2></div>
+ <div class="grid emp-grid">{tarjetas(emp['recibes'])}</div></section>
+<section class="shell fila"><div class="fila-cab"><h2>Cómo funciona</h2></div>
+ <ol class="emp-pasos">{pasos}</ol></section>
+<section class="shell"><div class="emp-caso">
+ <h2>{e(c['titulo'])}</h2><p>{e(c['texto'])}</p>
+ <div class="emp-datos">{datos}</div>
+ <p class="emp-caso-nota">{e(c['nota'])}</p></div></section>
+<section class="shell fila" id="precios"><div class="fila-cab"><h2>Precios</h2>
+ <span class="emp-iva">En pesos mexicanos, más IVA</span></div>
+ <div class="grid emp-precios">{paquetes}</div>
+ <p class="emp-lanzamiento">{e(emp['lanzamiento'])}</p>
+ <p class="emp-verif">{e(emp['verificacion'])}</p></section>
+<section class="shell fila"><div class="fila-cab"><h2>Por qué RGNERA</h2></div>
+ <div class="grid g4 emp-grid">{tarjetas(emp['porque'])}</div></section>
+<section class="shell fila"><div class="fila-cab"><h2>Preguntas frecuentes</h2></div>
+ <div class="emp-faq">{faq}</div></section>
+<section class="shell"><div class="banda-calc emp-cta">
+ <div><h2>¿Medimos tu negocio?</h2>
+ <p>Escríbenos con el nombre de tu negocio, a qué se dedica y cuántos locales tiene. Te respondemos con una propuesta.</p></div>
+ <div class="emp-cta-botones"><a class="btn-primario" href="{correo}">Escribir a {e(emp['contacto'])}</a>{pdf}</div>
+</div></section>""")
     out.append(footer())
     return "".join(out)
 
@@ -586,7 +649,7 @@ def main():
     shutil.copytree(ASSETS, DOCS / "assets")
     (DOCS / ".nojekyll").write_text("")
 
-    rutas = ["", "articulos/", "calculadora/", "acerca/", "videos/"]
+    rutas = ["", "articulos/", "calculadora/", "acerca/", "videos/", "empresas/"]
 
     (DOCS / "index.html").write_text(pagina_home(posts, videos), encoding="utf-8")
     (DOCS / "articulos").mkdir()
@@ -619,6 +682,10 @@ def main():
     (DOCS / "acerca" / "index.html").write_text(pagina_acerca(acerca_md), encoding="utf-8")
     (DOCS / "videos").mkdir()
     (DOCS / "videos" / "index.html").write_text(pagina_videos(videos), encoding="utf-8")
+    if (CONT / "empresas.json").exists():
+        emp = json.loads((CONT / "empresas.json").read_text(encoding="utf-8"))
+        (DOCS / "empresas").mkdir()
+        (DOCS / "empresas" / "index.html").write_text(pagina_empresas(emp), encoding="utf-8")
     (DOCS / "404.html").write_text(pagina_404(), encoding="utf-8")
     (DOCS / "feed.xml").write_text(feed_rss(posts), encoding="utf-8")
     (DOCS / "sitemap.xml").write_text(sitemap(rutas), encoding="utf-8")

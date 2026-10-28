@@ -1,0 +1,59 @@
+{
+ "contacto": "pablo@rgnera.com",
+ "asunto": "Huella de carbono para mi negocio",
+ "cuerpo_correo": "Hola, me interesa medir la huella de carbono de mi negocio.\n\nNombre del negocio:\nGiro:\nNúmero de locales:\nCiudad:\n",
+ "pdf": "/assets/empresas/rgnera-huella-empresas.pdf",
+ "hero": {
+  "eyebrow": "RGNERA para empresas",
+  "titulo": "Mide la huella de carbono de tu negocio con tus propias facturas",
+  "texto": "Un reporte de tus emisiones de los alcances 1, 2 y 3, hecho con tus CFDI y con datos oficiales mexicanos. En 2 a 3 semanas sabes dónde está tu huella y qué hacer primero."
+ },
+ "recibes": [
+  {"titulo": "Tu inventario de emisiones", "texto": "Toneladas de CO₂e al año de los alcances 1, 2 y 3 (GHG Protocol), y cuánto emites por cada $1,000 de venta."},
+  {"titulo": "Dónde está tu huella", "texto": "Los 5 rubros que concentran tus emisiones: carne, lácteos, electricidad, basura o lo que salga en tus números."},
+  {"titulo": "Qué hacer primero", "texto": "De 3 a 5 acciones, cada una con su ahorro estimado en toneladas y, cuando aplica, en pesos."},
+  {"titulo": "Listo para revisar", "texto": "El método y la hoja de datos en un anexo, para que tu contador o un verificador externo los puedan auditar."},
+  {"titulo": "Para contarlo bien", "texto": "Un resumen de una página y un texto para redes y menú, con reglas para no caer en greenwashing."},
+  {"titulo": "Indicadores NIS B-1", "texto": "En el reporte completo, los indicadores A.1 a A.3 de las Normas de Información de Sostenibilidad del CINIF."}
+ ],
+ "pasos": [
+  {"titulo": "Descargas tus XML", "texto": "Bajas del portal del SAT tus facturas de compras del último año y nos mandas tus recibos de luz y de gas."},
+  {"titulo": "Clasificamos cada compra", "texto": "Si la factura trae kilos, calculamos por kilo. Si no, por pesos, con datos del INEGI y del INECC."},
+  {"titulo": "Revisamos lo que no tiene factura", "texto": "En una llamada de 30 minutos vemos compras en efectivo, basura y vehículos."},
+  {"titulo": "Te entregamos el reporte", "texto": "En una sesión de una hora te explicamos los resultados y el plan de reducción."}
+ ],
+ "caso": {
+  "titulo": "Lo probamos primero en un restaurante de la Ciudad de México",
+  "texto": "Con tres meses de sus facturas, anualizados:",
+  "datos": [
+   {"cifra": "130 t", "texto": "de CO₂e al año con lo que estaba facturado"},
+   {"cifra": "6 de 10", "texto": "toneladas vienen de la comida que compra"},
+   {"cifra": "36 t", "texto": "salen solo de la res y el queso"},
+   {"cifra": "−8 t", "texto": "al año si cambia la mitad de la res por ave"}
+  ],
+  "nota": "Además apareció un insumo importante que entraba sin factura: un hueco en su huella y también en sus números."
+ },
+ "paquetes": [
+  {"nombre": "Diagnóstico", "precio": "$14,900", "para": "Un local, ventas de hasta unos $10 millones al año",
+   "incluye": ["Alcances 1, 2 y 3 con tus CFDI", "Tus 5 rubros principales", "3 acciones para empezar", "Resumen de una página"]},
+  {"nombre": "Reporte completo", "precio": "$29,900", "para": "PyME o grupo de hasta 3 locales", "destacado": true,
+   "incluye": ["Todo lo del diagnóstico", "Datos físicos: kWh, gas y kilos", "Revisión de compras sin factura", "Plan de reducción con ahorro en pesos", "Indicadores A.1 a A.3 de la NIS B-1", "Texto para comunicar sin greenwashing"]},
+  {"nombre": "Seguimiento", "precio": "$2,500", "periodo": "al mes", "para": "Para quien ya tiene su diagnóstico o reporte",
+   "incluye": ["Nueva medición cada año", "Tablero trimestral de avance", "Factores oficiales actualizados"]}
+ ],
+ "verificacion": "¿Necesitas verificación ISO 14064-3 para un banco o un cliente corporativo? La coordinamos con un organismo acreditado ante la ema: $8,000 de coordinación más la tarifa del verificador.",
+ "lanzamiento": "Precio de lanzamiento: 40% menos para los primeros 5 negocios que nos dejen contar su caso.",
+ "porque": [
+  {"titulo": "Datos mexicanos", "texto": "Usamos el mismo motor que nuestra calculadora gratuita: la Matriz Insumo-Producto 2018 del INEGI y el inventario nacional de emisiones del INECC."},
+  {"titulo": "Comida por kilo", "texto": "Un kilo de res emite unas 10 veces lo que un kilo de pollo. Por eso, cuando tu factura trae kilos, calculamos por kilo y no solo por pesos."},
+  {"titulo": "Factores oficiales", "texto": "Electricidad con el factor vigente del Sistema Eléctrico Nacional (0.444 kg de CO₂e por kWh) y combustibles con los factores de la SEMARNAT."},
+  {"titulo": "Quién lo hace", "texto": "Pablo Seldner, fundador de RGNERA, que estudió la maestría en sustentabilidad en la Universidad de Sídney: huella ambiental, análisis de ciclo de vida e insumo-producto."}
+ ],
+ "faq": [
+  {"p": "¿Es obligatorio medir la huella de mi negocio?", "r": "Para la mayoría de las PyMEs hoy no hay multa. Pero las Normas de Información de Sostenibilidad del CINIF ya piden emisiones a las empresas que reportan bajo NIF desde el ejercicio 2025, y cada vez más clientes corporativos se las piden a sus proveedores."},
+  {"p": "¿Qué datos necesito?", "r": "Los XML de tus facturas de compras del último año, que se descargan del portal del SAT, y tus recibos de luz y de gas. Lo demás lo vemos en una llamada."},
+  {"p": "¿Es una certificación?", "r": "No. Es un inventario de emisiones con la metodología del GHG Protocol. Si necesitas una verificación ISO 14064-3, la coordinamos con un organismo acreditado."},
+  {"p": "¿Qué pasa con mis datos?", "r": "Solo los usamos para tu reporte. No los compartimos ni contamos tu caso sin tu permiso."},
+  {"p": "¿Cuánto tarda?", "r": "De 2 a 3 semanas desde que recibimos tus datos."}
+ ]
+}

@@ -238,3 +238,62 @@ footer ul a:hover{color:var(--amber)}
   footer .shell{grid-template-columns:1fr;gap:26px}
   .btn-calc{padding:8px 14px;font-size:13px}
 }
+
+/* .hero, .fila, .cab-seccion y .calc-intro redefinen padding y le quitaban el margen
+   lateral a .shell entre 721 y 1119 px de ancho */
+.shell.hero,.shell.fila,.shell.cab-seccion,.shell.calc-intro{padding-left:24px;padding-right:24px}
+@media (max-width:720px){
+  .shell.hero,.shell.fila,.shell.cab-seccion,.shell.calc-intro{padding-left:16px;padding-right:16px}
+}
+
+/* ---------- Página empresas ---------- */
+.emp-hero h1{max-width:780px}
+.emp-hero p{max-width:640px}
+.emp-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.emp-item h3{font-family:var(--ff-display);font-size:19px;color:var(--olive);margin-bottom:6px;line-height:1.25}
+.emp-item p{font-size:14.5px;color:rgba(32,38,26,.78)}
+.emp-pasos{list-style:none;counter-reset:paso;display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.emp-pasos li{counter-increment:paso;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:20px 22px}
+.emp-pasos li:before{content:counter(paso);display:flex;width:32px;height:32px;border-radius:50%;
+  background:var(--amber);color:var(--amber-ink);font-weight:600;align-items:center;
+  justify-content:center;margin-bottom:12px}
+.emp-pasos b{display:block;font-family:var(--ff-display);font-size:18px;color:var(--olive);
+  margin-bottom:6px;line-height:1.25}
+.emp-pasos span{font-size:14.5px;color:rgba(32,38,26,.78)}
+.emp-caso{margin:48px 0 8px;background:var(--olive);color:var(--cream);border-radius:18px;padding:40px 44px}
+.emp-caso h2{font-family:var(--ff-display);font-size:28px;font-weight:700;max-width:640px;line-height:1.2}
+.emp-caso > p{color:var(--sage);margin-top:8px}
+.emp-datos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:26px 0 22px}
+.emp-dato b{display:block;font-family:var(--ff-display);font-size:40px;line-height:1.1;color:var(--amber)}
+.emp-dato span{font-size:14px;color:var(--cream)}
+.emp-caso-nota{font-size:14.5px;color:var(--sage);border-top:1px solid rgba(245,241,230,.2);padding-top:16px}
+.emp-iva{font-size:13px;color:rgba(32,38,26,.6)}
+.emp-precio{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:24px 24px 22px;display:flex;flex-direction:column;gap:8px}
+.emp-precio.destacado{border:2px solid var(--amber)}
+.emp-precio h3{font-family:var(--ff-display);font-size:22px;color:var(--olive)}
+.emp-monto{font-family:var(--ff-display);font-size:34px;font-weight:700;color:var(--ink);line-height:1.1}
+.emp-monto small{font-family:var(--ff-ui);font-size:13px;font-weight:500;color:rgba(32,38,26,.6)}
+.emp-para{font-size:13.5px;color:rgba(32,38,26,.7)}
+.emp-precio ul{list-style:none;display:flex;flex-direction:column;gap:7px;margin-top:8px;font-size:14.5px}
+.emp-precio li{padding-left:22px;position:relative}
+.emp-precio li:before{content:"✓";position:absolute;left:0;color:var(--olive);font-weight:700}
+.emp-lanzamiento{margin-top:18px;background:#fbf0dc;border:1px solid #ecd3a4;border-radius:10px;
+  padding:12px 16px;font-size:14.5px;color:var(--amber-ink);font-weight:500}
+.emp-verif{margin-top:12px;font-size:14px;color:rgba(32,38,26,.75);max-width:760px}
+.emp-faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:14px 18px;margin-bottom:10px}
+.emp-faq summary{cursor:pointer;font-weight:600;color:var(--olive)}
+.emp-faq details p{margin-top:8px;font-size:15px;color:rgba(32,38,26,.8);max-width:760px}
+.emp-cta-botones{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.link-claro{color:var(--cream);font-size:14px;border-bottom:2px solid var(--amber)}
+@media (max-width:960px){
+  .emp-pasos,.emp-datos{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:720px){
+  .emp-pasos,.emp-datos{grid-template-columns:1fr}
+  .emp-caso{padding:30px 22px}
+  .emp-dato b{font-size:34px}
+}
