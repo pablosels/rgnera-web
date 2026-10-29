@@ -16,7 +16,7 @@ Tu celular viejo guarda cobre, oro y tus fotos, y muy poca de la basura electró
 
 Hola —
 
-[BORRADOR — Pablo ajusta] En la cocina de un restaurante, cuando algo falla, lo primero que preguntas es si tiene arreglo. Comprar otro es lo último. Con el celular solemos hacerlo al revés. Y en pleno Buen Fin, más.
+En la cocina de un restaurante, cuando algo falla, lo primero que preguntas es si tiene arreglo. Comprar otro es lo último. Con el celular solemos hacerlo al revés. Y en pleno Buen Fin, más.
 
 ### Lo que guarda tu cajón
 

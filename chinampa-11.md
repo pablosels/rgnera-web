@@ -16,7 +16,7 @@ Y tu chocolate, a una mosquita que casi nadie conoce. Quiénes polinizan lo que 
 
 Hola —
 
-[BORRADOR — Pablo ajusta] En un restaurante aprendes rápido a cuidar a tus proveedores: si uno falla, se nota en el plato esa misma noche. Pero hay uno que trabaja antes que todos, nunca manda factura y casi nadie lo ve: el que llevó el polen de una flor a otra para que hubiera fruto.
+En un restaurante aprendes rápido a cuidar a tus proveedores: si uno falla, se nota en el plato esa misma noche. Pero hay uno que trabaja antes que todos, nunca manda factura y casi nadie lo ve: el que llevó el polen de una flor a otra para que hubiera fruto.
 
 ### Un trabajo que no ves
 

@@ -1,6 +1,6 @@
-# La Chinampa #9 — domingo 18 de octubre
+# La Chinampa #9 — domingo 1 de noviembre
 
-**Sección:** Residuos y Economía Circular · **Programar:** 18 oct 2026, 8:00 a.m. CDMX
+**Sección:** Residuos y Economía Circular · **Programar:** 1 nov 2026, 8:00 a.m. CDMX
 
 ---
 
@@ -16,7 +16,7 @@ Según la industria, México recupera más de su PET que cualquier otro país de
 
 Hola —
 
-[BORRADOR — Pablo ajusta] Un restaurante no compra agua por botella: la compra por litro, porque ahí cada peso se nota. En mi casa, en cambio, compré agua durante años sin hacer esa cuenta.
+Un restaurante no compra agua por botella: la compra por litro, porque ahí cada peso se nota. En mi casa, en cambio, compré agua durante años sin hacer esa cuenta.
 
 Esta semana la hice.
 
@@ -69,7 +69,7 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Programar:** domingo **18 de octubre de 2026, 8:00 a.m. CDMX** (Substack → Schedule → verifica zona horaria Ciudad de México).
+**Programar:** domingo **1 de noviembre de 2026, 8:00 a.m. CDMX** (se recorrió del 18-oct; programada por Claude el 29-oct) (Substack → Schedule → verifica zona horaria Ciudad de México).
 **Sección:** Residuos y Economía Circular. **CTA protagonista:** la calculadora (cierre, en negritas). El link al artículo va en línea, sin negritas, para no competir. La PD pide respuesta, como siempre.
 **Para pegar en Substack:** abre `chinampa-09 para pegar.html` (Escritorio → La Chinampa, o Dropbox → RGNERA → La Chinampa): arriba vienen título, subtítulo, sección y fecha para copiar; luego clic en el texto, Ctrl+A, Ctrl+C, Ctrl+V en Substack.
 

@@ -1,6 +1,6 @@
-# La Chinampa #10 — domingo 25 de octubre
+# La Chinampa #10 — viernes 30 de octubre
 
-**Sección:** Residuos y Economía Circular · **Programar:** 25 oct 2026, 8:00 a.m. CDMX
+**Sección:** Residuos y Economía Circular · **Programar:** 30 oct 2026, 8:00 a.m. CDMX
 
 ---
 
@@ -10,13 +10,13 @@ Una ofrenda que no deja basura (la tradicional ya era así)
 
 ## Subtítulo
 
-Una flor que es de aquí, papel que regresa a la tierra, comida que se comparte. Falta una semana: cinco cosas para poner la ofrenda sin que el 3 de noviembre termine en bolsas negras.
+Una flor que es de aquí, papel que regresa a la tierra, comida que se comparte. Faltan unos días: cinco cosas para poner la ofrenda sin que el 3 de noviembre termine en bolsas negras.
 
 ## Cuerpo
 
 Hola —
 
-[BORRADOR — Pablo ajusta] Tener restaurante me enseñó que casi toda la basura se decide antes, al comprar: lo que llega en caja, en bolsa o a granel ya viene con su destino. Con la ofrenda pasa lo mismo. La basura del 3 de noviembre se decide esta semana, en el mercado.
+Tener restaurante me enseñó que casi toda la basura se decide antes, al comprar: lo que llega en caja, en bolsa o a granel ya viene con su destino. Con la ofrenda pasa lo mismo. La basura del 3 de noviembre se decide esta semana, en el mercado.
 
 ### La ofrenda ya era circular
 
@@ -28,7 +28,7 @@ El plástico llegó después: flores artificiales, papel picado de plástico, pl
 
 El cempasúchil (*Tagetes erecta*) es nativo de México y fue domesticado en Mesoamérica. Su nombre viene del náhuatl *cempōhualxōchitl*, de "veinte" y "flor"; suele traducirse como "veinte flores". Y se sigue cultivando aquí: en 2024 el país produjo **20,659 toneladas de flor de cempasúchil** en 2,203 hectáreas, con Puebla, Hidalgo y Oaxaca a la cabeza, además de medio millón de manojos.
 
-En la Ciudad de México, según SEDEMA, los productores del suelo de conservación —de Xochimilco, Tláhuac y Milpa Alta— cultivaron **6.3 millones de plantas en 2025**, un récord. Parte de ese cempasúchil crece en chinampas. (Sí: el nombre de este newsletter no es casualidad.)
+En la Ciudad de México, los productores del suelo de conservación de Xochimilco y Tláhuac cultivaron este año **casi 10 millones de plantas**, 55% más que en 2025 y unas nueve veces más que en 2019, según el gobierno de la ciudad. Parte de ese cempasúchil crece en chinampas. (Sí: el nombre de este newsletter no es casualidad.)
 
 ### El papel que regresa a la tierra
 
@@ -36,7 +36,7 @@ El papel picado se hace tradicionalmente en papel de china. En San Salvador Huix
 
 ### La comida no es para tirar
 
-En muchas familias, cuando se levanta la ofrenda, la comida se reparte y se come: se dice que los difuntos ya tomaron su esencia. Es lo que platicamos hace dos semanas sobre el desperdicio, solo que la tradición lo resolvió primero.
+En muchas familias, cuando se levanta la ofrenda, la comida se reparte y se come: se dice que los difuntos ya tomaron su esencia. Es lo que platicamos hace unas semanas sobre el desperdicio, solo que la tradición lo resolvió primero.
 
 ### El dato de la semana
 
@@ -66,7 +66,7 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Programar:** domingo **25 de octubre de 2026, 8:00 a.m. CDMX** (Substack → Schedule → verifica zona horaria Ciudad de México). Sale una semana antes del 1-2 de noviembre, a tiempo para comprar.
+**Programar:** viernes **30 de octubre de 2026, 8:00 a.m. CDMX** (se recorrió del 25-oct porque no llegó a publicarse; programada por Claude el 29-oct). Sale dos días antes del 1-2 de noviembre. Cifra de CDMX actualizada el 29-oct: 9,924,300 plantas en 2026, +55% frente a 2025 (Crónica, 20-oct-2026, con datos de Sedema; Excélsior; Sedema: unas nueve veces más que en 2019). El SIAP 2024 sigue siendo el dato nacional más reciente (Por Esto, 17-oct-2026).
 **Sección:** Residuos y Economía Circular (alternativa: Sostenibilidad). **CTA protagonista:** responder el correo (PD: qué lleva siempre tu ofrenda). La calculadora va en una línea, sin negritas; el link a composta va en línea. Es la edición más reenviable del trimestre: si quieres, agrega arriba "reenvíasela a quien pone la ofrenda en tu casa".
 **Para pegar en Substack:** abre `chinampa-10 para pegar.html` (Escritorio → La Chinampa, o Dropbox → RGNERA → La Chinampa): arriba vienen título, subtítulo, sección y fecha para copiar; luego clic en el texto, Ctrl+A, Ctrl+C, Ctrl+V en Substack.
 
