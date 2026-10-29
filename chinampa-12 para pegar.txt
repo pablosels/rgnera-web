@@ -1,0 +1,63 @@
+Hola —
+
+[BORRADOR — Pablo ajusta] En la cocina de un restaurante, cuando algo falla, lo primero que preguntas es si tiene arreglo. Comprar otro es lo último. Con el celular solemos hacerlo al revés. Y en pleno Buen Fin, más.
+
+### Lo que guarda tu cajón
+
+En 2025, 84.6% de las personas de seis años o más en México usó celular, según el INEGI. Y es probable que en tu casa haya uno viejo en un cajón, junto a cables de quién sabe qué.
+
+Ese aparato es una pequeña mina. Según el monitor global de la ONU (*Global E-waste Monitor 2024*, de la ITU y UNITAR), la basura electrónica del mundo en 2022 traía 31,000 millones de kilos de metales, con valor de unos 91,000 millones de dólares, sobre todo en cobre, hierro y oro. También plomo, mercurio y retardantes de flama, que no conviene soltar al ambiente.
+
+Y guarda algo que vale más para ti: tus fotos, tus chats, tus contraseñas. El mismo informe sugiere que, en parte, por eso no se recolectan más celulares: a la gente le cuesta entregar sus datos.
+
+### Cuánto se recicla de verdad
+
+Con datos del mismo monitor: de los 62,000 millones de kilos que generó el mundo en 2022, solo 22.3% quedó documentado como recolectado y reciclado de manera formal y adecuada. En celulares, routers y otros equipos pequeños de informática y telecomunicaciones, 22%.
+
+En México el hueco es más grande. En 2022 generamos 1,499 millones de kilos, 11.8 por persona: el tercer lugar del continente, después de Estados Unidos y Brasil. Solo 52.6 millones de kilos quedaron documentados como reciclados formalmente. Alrededor de 3.5%.
+
+Ojo: esa cifra cuenta solo lo documentado. Lo demás se queda guardado, termina en la basura o se recupera por fuera, sin que quede registrado. Y en el mundo, el manejo inadecuado suelta cada año 58,000 kilos de mercurio al ambiente (mismo monitor).
+
+Reglas hay. La Ley General de Economía Circular, de enero de 2026, hace a productores e importadores responsables de sus productos en todo su ciclo de vida y pide fomentar la reparación antes que el desecho. Se aplicará poco a poco.
+
+### El más sustentable es el que ya tienes
+
+Reciclar ayuda, pero no lo recupera todo: el reciclaje de basura electrónica cubre apenas 1% de la demanda de tierras raras (ITU y UNITAR, 2024).
+
+Investigadores de la Comisión Europea calcularon, para Europa, que la mayor parte de la huella de carbono de un smartphone sale de extraer sus materiales y fabricar sus piezas: 10.7 kilos de CO₂ equivalente al año si lo cambias cada dos años, contra 1.9 por cargarlo. El reciclaje al final apenas descuenta 0.8. Eso, sin contar las redes de datos (Cordella y colegas, 2021).
+
+Por eso la palanca es el tiempo de uso. En 2016 se calculaba que en el mundo se cambiaba de celular cada 21 meses, en promedio (otro estudio de Cordella y colegas); estimaciones de 2024 ya lo ubican en unos 43 meses (Counterpoint Research), pero muchos se siguen cambiando antes de tiempo. Según el cálculo europeo, usarlo tres años en vez de dos recorta su huella anual entre 23 y 30%, y llegar a cuatro, entre 39 y 44%, aun si hay que repararlo. Y si un celular usado sustituye de verdad a uno nuevo, la huella baja entre 52 y 79%.
+
+### Si este Buen Fin ya estrenaste
+
+No pasa nada. Lo que sigue es que dure.
+
+**Funda y mica desde el primer día.** Con funda, las roturas podrían bajar a la mitad (Cordella y colegas, 2021).
+
+**Guarda el ticket y la garantía.** Si falla pronto, te los van a pedir.
+
+**El viejo no va al cajón.** Si funciona, bórralo (paso 2, abajo) y véndelo o regálalo esta semana. Así puede sustituir a uno nuevo en otra casa.
+
+### El dato de la semana
+
+> En 2022 México generó **1,499 millones de kilos de basura electrónica**. Solo 52.6 millones quedaron documentados como reciclados de manera formal: alrededor de **3.5%**.
+>
+> *Fuente: Global E-waste Monitor 2024, ITU y UNITAR (datos de 2022, publicados en 2024).*
+
+### Tu acción de esta semana (30 minutos): el inventario del cajón
+
+1. **Cuenta.** Saca todo: celulares, tablets, cargadores, cables. Anota cuántos son.
+2. **Respalda y borra.** Pasa fotos y contactos a la nube o a tu compu. Ten a la mano la contraseña de tu cuenta de Apple o de Google; en iPhone, cierra sesión antes de borrar. Luego restablece de fábrica y saca el chip y la memoria.
+3. **Decide, uno por uno.** ¿Prende y sirve? Véndelo o regálalo. ¿Falla la batería o la pantalla? Cotiza la reparación. ¿Ya no tiene arreglo? Al acopio.
+4. **Llévalo a un acopio autorizado.** En la Ciudad de México, el Reciclatrón de la SEDEMA es gratuito y recibe celulares, pilas, cables y cargadores. Tiene puntos fijos en cinco alcaldías, abiertos casi todos los días, y jornadas el sábado 21 (Canal Nacional, Coyoacán), el jueves 26 y viernes 27 (UAM Iztapalapa) y el domingo 29 (Benito Juárez); confirma la sede en su sitio antes de ir. Llévalo limpio y completo: no reciben equipos desarmados ni rotos. Fuera de la capital, pregunta en tu municipio.
+5. **Antes de comprar en lo que queda del Buen Fin (termina el martes 17):** compara precios en el Quién es Quién en los Precios de Profeco (elbuenfin.profeco.gob.mx): tiene celulares, cubre 30 ciudades y te deja ver si el precio subió o bajó. Y revisa si hay reacondicionado.
+
+Todo el detalle está en [Basura electrónica en México: qué pasa con tu celular viejo](https://rgnera.com/articulos/basura-electronica-en-mexico-que-pasa-con-tu-celular-viejo/).
+
+Y si quieres medir el resto de tu huella: https://rgnera.com/calculadora/
+
+Nos leemos el domingo. 💚
+
+— Pablo
+
+*P.D. ¿Cuántos aparatos salieron de tu cajón? Respóndeme con el número y cuál era el más viejo. Los junto en una próxima edición, sin nombres.*
