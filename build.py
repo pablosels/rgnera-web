@@ -270,7 +270,15 @@ def footer():
   <span>© {date.today().year} CAMVIO · RGNERA</span><span>Hecho con 💚 en México</span>
  </div></div>
 </footer>
-</body></html>"""
+{analitica()}</body></html>"""
+
+
+def analitica():
+    """Beacon de Cloudflare Web Analytics (sin cookies, sin banner). Token vacío en site.json = apagado."""
+    tok = SITE.get("cf_beacon_token", "")
+    if not tok:
+        return ""
+    return f"""<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "{tok}"}}'></script>\n"""
 
 
 def tarjeta(p):
