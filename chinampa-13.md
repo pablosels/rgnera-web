@@ -74,9 +74,9 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Programar:** domingo **22 de noviembre de 2026, 8:00 a.m. CDMX** (Substack → Schedule → verifica zona horaria Ciudad de México). El artículo del sitio sale el miércoles 11-nov; esta edición lo enlaza once días después. Es temporada seca: por eso la acción es cazar fugas y no cosechar lluvia.
+**Programar:** domingo **22 de noviembre de 2026, 8:00 a.m. CDMX**. ✅ **PROGRAMADA por Claude el 4-nov-2026** en el Edge de Pablo (borrador por API + casilla de programar): post 223513403, sección Agua, `trigger_at` 2026-11-22T14:00Z, verificada en /api/v1/post_management/scheduled. El artículo del sitio sale el miércoles 11-nov; esta edición lo enlaza once días después. Es temporada seca: por eso la acción es cazar fugas y no cosechar lluvia.
 **Sección:** Agua. **CTA protagonista:** responder el correo (PD: cuántos litros al día marcó tu medidor). La calculadora va en una línea, sin negritas; el link al artículo va en línea. Si quieres empujar el reenvío, agrega arriba "reenvíasela a quien paga el agua en su casa".
-**Para pegar en Substack:** abre `chinampa-13 para pegar.html` (Escritorio → La Chinampa, o Dropbox → RGNERA → La Chinampa): arriba vienen título, subtítulo, sección y fecha para copiar; luego clic en el texto, Ctrl+A, Ctrl+C, Ctrl+V en Substack.
+**Para pegar en Substack (respaldo; ya está programada):** abre `chinampa-13 para pegar.html` (Escritorio → La Chinampa, o Dropbox → RGNERA → La Chinampa): arriba vienen título, subtítulo, sección y fecha para copiar; luego clic en el texto, Ctrl+A, Ctrl+C, Ctrl+V en Substack.
 
 **Revisar antes de publicar:**
 

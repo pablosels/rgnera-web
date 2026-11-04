@@ -1,6 +1,6 @@
 # La Chinampa #14 — domingo 29 de noviembre
 
-**Sección:** Clima y Salud · **Programar:** 29 nov 2026, 8:00 a.m. CDMX
+**Sección:** Cambio Climático y Salud · **Programar:** 29 nov 2026, 8:00 a.m. CDMX
 
 ---
 
@@ -70,9 +70,9 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Programar:** domingo **29 de noviembre de 2026, 8:00 a.m. CDMX** (Substack → Schedule → verifica zona horaria Ciudad de México). Sale 13 días después del artículo del sitio (lunes 16-nov).
-**Sección:** Clima y Salud (confirmado: la sección ya existe en Substack con ese nombre). **CTA protagonista:** responder el correo (PD: qué te ayuda cuando el clima te pesa). La calculadora va en una línea, sin negritas; el link al artículo va en línea. No agregué "reenvíasela": la acción ya consiste en hablar con alguien y competiría con la PD.
-**Para pegar en Substack:** abre `chinampa-14 para pegar.html` (Escritorio → La Chinampa, o Dropbox → RGNERA → La Chinampa): arriba vienen título, subtítulo, sección y fecha para copiar; luego clic en el texto, Ctrl+A, Ctrl+C, Ctrl+V en Substack.
+**Programar:** domingo **29 de noviembre de 2026, 8:00 a.m. CDMX**. ✅ **PROGRAMADA por Claude el 4-nov-2026** en el Edge de Pablo (borrador por API + casilla de programar): post 223513405, sección Cambio Climático y Salud, `trigger_at` 2026-11-29T14:00Z, verificada en /api/v1/post_management/scheduled. Sale 13 días después del artículo del sitio (lunes 16-nov).
+**Sección:** Cambio Climático y Salud (id 432977; es el nombre real de la sección en Substack, que en notas internas se abrevia "Clima y Salud"). **CTA protagonista:** responder el correo (PD: qué te ayuda cuando el clima te pesa). La calculadora va en una línea, sin negritas; el link al artículo va en línea. No agregué "reenvíasela": la acción ya consiste en hablar con alguien y competiría con la PD.
+**Para pegar en Substack (respaldo; ya está programada):** abre `chinampa-14 para pegar.html` (Escritorio → La Chinampa, o Dropbox → RGNERA → La Chinampa): arriba vienen título, subtítulo, sección y fecha para copiar; luego clic en el texto, Ctrl+A, Ctrl+C, Ctrl+V en Substack.
 
 **Revisar antes de publicar:**
 
@@ -112,7 +112,7 @@ Nos leemos el domingo. 💚
 6. Para el story/carrusel: "El dato de la semana" y la lista de cinco pasos son los dos screenshots. Si haces un tercero, que sea "Cuándo pedir ayuda" con la Línea de la Vida.
 7. **Auditoría (4-nov-2026):** revisé 46 afirmaciones del título, el subtítulo y el cuerpo (cifras, años, muestras, instituciones, teléfonos, qué dice cada manual o informe y cómo se caracteriza cada estudio) y 4 de esta sección (fila de México en la tabla del PNUD, el estudio de Tiede et al., el aviso electoral de gob.mx y la sección de Substack), abriendo yo mismo cada fuente primaria: PDF del PNUD (incluida la tabla de trabajo de campo de la p. 99), PDF de la APA, artículo y suplemento de Andre et al., texto completo en PMC de Peuskens, Schwartz y Acquadro Maran, PLOS de Pinchoff y las páginas de gob.mx (que siguen dando 800 911 2000, gratis y 24/365, el 27-oct-2026; CONASAMA sigue activa). Las 46 del cuerpo se sostienen en valor, unidad, año, población y alcance; ninguna fuente tiene corrección registrada y todas son la edición vigente. Corregí 1 en el cuerpo y 4 notas aquí:
    - **Cuerpo, "Dosificar las noticias":** "No se trata de desconectarte, sino de elegir cuándo" → "El estudio no dice cuánto conviene; la idea práctica es no desconectarte, sino elegir cuándo" (redacción final de Claude sobre la del auditor). Era un consejo práctico presentado como conclusión de un estudio transversal que no midió cuánta exposición conviene (https://pmc.ncbi.nlm.nih.gov/articles/PMC8431103/). +6 palabras.
-   - **Sección de Substack:** quité la duda; "Clima y Salud" ya existe.
+   - **Sección de Substack:** quité la duda; la sección existe (en Substack se llama "Cambio Climático y Salud").
    - **"Cuándo pedir ayuda" (punto 4):** aclaré que "disfrutar" no viene de la escala de Clayton y Karazsia.
    - **Notas de fuentes (punto 5):** agregué la vigencia del PNUD 2024 y del informe APA 2021 (con el *Children and Youth Report 2023* como informe aparte), la limitación de muestra de Schwartz et al., cómo midió VoCes-19 la agencia y la preocupación, y el diseño transversal del estudio italiano.
    - **Extensión (punto 3):** actualizada a 888 palabras.
