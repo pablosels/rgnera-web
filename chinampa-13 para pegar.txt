@@ -1,0 +1,55 @@
+Hola —
+
+En un restaurante aprendes a oír el agua: la llave que gotea, el excusado que se queda corriendo. Son ruidos chiquitos que nadie atiende porque siempre hay algo más urgente. Esta semana te propongo atenderlos, porque debajo de esta ciudad cada litro pesa más de lo que parece.
+
+### Lo que vio el satélite nuevo
+
+Entre octubre de 2025 y enero de 2026, en temporada seca, NISAR, un satélite de la NASA y la agencia espacial de la India, midió zonas de la Ciudad de México y sus alrededores que bajaban más de 2 centímetros al mes. Son mediciones preliminares, pero cuadran con lo que se esperaba.
+
+Un estudio de 2021, con más de un siglo de mediciones, encontró zonas que se hunden hasta 50 centímetros al año, a un ritmo casi constante desde al menos 1950 (Chaussard y colegas). Al Ángel de la Independencia ya le han agregado 14 escalones en la base, porque el suelo de alrededor sigue bajando (NASA).
+
+### Una esponja que ya no se infla
+
+Un acuífero es una capa de arena, grava o roca con poros llenos de agua; se rellena con la lluvia que se infiltra (la recarga).
+
+Bajo la capital, encima del acuífero, están las arcillas del antiguo lago: un acuitardo (una capa que retiene agua, pero apenas la deja pasar). Con más de un siglo de bombeo y el peso de la ciudad encima, esas arcillas sueltan su agua y se aplastan. Y no se vuelven a esponjar: el estudio de 2021 concluye que el hundimiento es casi totalmente irreversible y que, en unos 150 años, cuando las arcillas terminen de compactarse, podría sumar hasta 30 metros más en algunas zonas del valle.
+
+Hay un efecto que se ve menos: el nivel del agua ya quedó por debajo de la mayor parte de esas arcillas, y el agua que guardaban, cargada de sales y contaminantes, escurre hacia el acuífero del que nos abastecemos. Menos agua, y peor.
+
+### Las cuentas no cuadran
+
+Según el Programa Nacional Hídrico 2026-2030, del agua que México concesiona para usos consuntivos (los que la consumen, la evaporan o la incorporan a un producto), 39.9% viene del subsuelo. Lo concesionado del subsuelo equivale a casi un tercio de la recarga, pero ese promedio esconde lugares como el Valle de México, donde se extrae más de lo que entra. De los 653 acuíferos del país, 286 ya no tienen agua libre para nuevas concesiones.
+
+Y la red lo empeora: según un diagnóstico del gobierno capitalino, el hundimiento fractura tuberías viejas, y por ahí se va agua que costó bombear o traer desde otra cuenca.
+
+### Lo que sí está en tus manos
+
+Lo que ya bajó no va a volver a subir. Pero el litro que no se fuga ya no hay que sacarlo del acuífero ni traerlo de lejos.
+
+Y las fugas de casa pesan. Según la EPA, la agencia ambiental de Estados Unidos, una llave que gotea una vez por segundo puede tirar más de 11,000 litros al año, y allá casi una de cada diez casas tiene fugas de unos 190 litros diarios o más. Son datos de su país: la acción de hoy es medir los tuyos.
+
+### El dato de la semana
+
+> Al acuífero que está bajo la Ciudad de México le entran, en promedio, **512.8 millones de metros cúbicos de agua al año**. Tiene concesionados o asignados **979.8 millones: casi el doble**. (Un millón de metros cúbicos son mil millones de litros.)
+>
+> *Fuente: Conagua, disponibilidad de agua subterránea de los 653 acuíferos, Diario Oficial de la Federación (9 de noviembre de 2023, la actualización vigente; datos al cierre de 2022).*
+
+### Tu acción de esta semana (30 minutos): la prueba del medidor
+
+1. **Cierra todo.** Llaves, lavadora, riego. Si tienes tinaco o cisterna, espera a que el flotador corte el paso. Si el medidor nunca se detiene, revisa ese flotador: puede estar tirando agua por el tubo de demasías.
+2. **Anota la lectura.** Tómale foto con todos los números: los negros son metros cúbicos; los rojos, fracciones (un metro cúbico son 1,000 litros). Si tiene una ruedita, fíjate si gira.
+3. **Espera 30 minutos sin usar agua** y vuelve a leer. Si avanzó, probablemente hay fuga. (La EPA sugiere dos horas: puedes leer al acostarte y al despertar.) La cuenta: los litros que avanzó, entre las horas que esperaste, por 24, son los que pierdes al día. Por 365, al año.
+4. **Colorante en el excusado.** Unas gotas de colorante vegetal en el tanque, sin jalarle. Si en 10 minutos se pinta el agua de la taza, hay fuga: revisa el sapo (el tapón de hule), que se cambia fácil. Luego jala para que no se manche.
+5. **Reporta la fuga de la calle.** En la Ciudad de México, al *426 (Línea H2O, del gobierno capitalino), con la dirección exacta y una referencia. Fuera de la capital, al organismo de agua de tu municipio.
+
+¿No tienes medidor? Haz el 4 y el 5, y revisa a ojo llaves y flotador.
+
+Todo el detalle está en [Agua subterránea: por qué la Ciudad de México se hunde](https://rgnera.com/articulos/agua-subterranea-por-que-la-ciudad-de-mexico-se-hunde/).
+
+Y si quieres medir el resto de tu huella: https://rgnera.com/calculadora/
+
+Nos leemos el domingo. 💚
+
+— Pablo
+
+*P.D. ¿Se movió tu medidor? Respóndeme con cuántos litros al día te salieron, aunque sea cero. Los junto en una próxima edición, sin nombres.*
