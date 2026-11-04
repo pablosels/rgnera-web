@@ -278,7 +278,9 @@ def analitica():
     tok = SITE.get("cf_beacon_token", "")
     if not tok:
         return ""
-    return f"""<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "{tok}"}}'></script>\n"""
+    # Formato del snippet que da Cloudflare hoy (type='module'); el sitio va en DNS only,
+    # así que Cloudflare no lo inyecta solo: va escrito en cada página.
+    return f"""<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "{tok}"}}'></script>\n"""
 
 
 def tarjeta(p):
