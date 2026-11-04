@@ -151,7 +151,7 @@ footer ul a:hover{color:var(--amber)}
 .articulo .meta-post .sep{color:var(--greige)}
 .articulo .portada{border-radius:14px;overflow:hidden;border:1px solid var(--line);
   margin-bottom:34px}
-.prosa{font-family:var(--ff-lectura);font-size:18.5px;line-height:1.75;color:var(--ink)}
+.prosa{font-family:var(--ff-lectura);font-size:18.5px;line-height:1.75;color:var(--ink);overflow-wrap:break-word}
 .prosa p{margin-bottom:1.35em}
 .prosa h2{font-family:var(--ff-display);color:var(--olive);font-size:26px;
   margin:1.6em 0 .6em;line-height:1.25}
