@@ -34,7 +34,7 @@ desde 2021 están ahí, ordenados y listos.
 
 🌎 **La calculadora de huella.** Nuestra herramienta más querida: mide tu
 huella de carbono en unos 3 minutos, con datos oficiales mexicanos (INEGI e
-INECC). Te dice tu número, cómo te comparas con el promedio nacional y — lo
+INECC). Te dice tu número, cómo te comparas con el promedio en México y — lo
 importante — por dónde recortar. Y si quieres, te manda tus resultados con
 consejos personalizados a tu correo. Pruébala aquí: rgnera.com/calculadora
 

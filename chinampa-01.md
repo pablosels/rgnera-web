@@ -46,15 +46,19 @@ Eso es exactamente lo valioso. No es el número: es **el desglose.**
 
 ### El dato de la semana
 
-> El promedio mexicano es de **5.1 toneladas de CO₂e por persona al año**.
+> El promedio mexicano es de **4.7 toneladas de CO₂e por persona al año**.
 > La meta climática mundial, para que esto tenga arreglo, es de **~2 toneladas**.
-> Cada mexicano promedio emite, entonces, **dos veces y media** lo que el
+> Cada mexicano promedio emite, entonces, **casi dos veces y media** lo que el
 > planeta puede absorber por persona.
 >
 > *(Fuentes: INEGI, Matriz de Insumo-Producto 2018 · INECC, Inventario Nacional
 > de Emisiones)*
+>
+> *Actualización (10 de noviembre de 2026): esta edición decía 5.1 toneladas.
+> Corregimos la calculadora (algunos gastos se contaban dos veces) y el
+> promedio quedó en 4.7.*
 
-Ese "dos veces y media" es incómodo. Pero también es esperanzador: significa
+Ese "casi dos veces y media" es incómodo. Pero también es esperanzador: significa
 que el ajuste es grande, sí, pero no imposible — y no está donde la mayoría
 cree que está.
 

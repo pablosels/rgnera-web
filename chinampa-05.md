@@ -40,7 +40,7 @@ Ahora junta las dos cosas. En DAC, cada kWh que produce tu techo te ahorra $6.56
 >
 > *Fuente: Comisión Nacional de Energía (CNE), cierre de 2025, publicado en junio de 2026.*
 
-Y el bono que el recibo no muestra: con el factor de emisión oficial de la red (0.444 kg de CO₂e por kWh, SEMARNAT), un sistema de 3 kWp evita **unas 2 toneladas de CO₂e al año** — el 40% de la huella del mexicano promedio que vimos en la primera edición.
+Y el bono que el recibo no muestra: con el factor de emisión oficial de la red (0.444 kg de CO₂e por kWh, SEMARNAT), un sistema de 3 kWp evita **unas 2 toneladas de CO₂e al año** — más del 40% de la huella del mexicano promedio (4.7 t; la primera edición decía 5.1 antes de que corrigiéramos la calculadora).
 
 ### Tu acción de esta semana (10 minutos, recibo en mano)
 
@@ -92,7 +92,7 @@ Nos leemos el domingo. 💚
    - Generación CDMX ~130 kWh/kWp/mes: 5.4 horas sol pico × 0.8 = 4.3 kWh/kWp/día (Voltflow); otros instaladores 115–140.
    - Retorno DAC 2–4 años / subsidiado 5–7: Voltflow abr-2026, OPS Global 2026 (2–4 / 4–6), Vasolar (2–3 / 3–5).
    - Generación distribuida: 5,437.3 MW acumulados, +986 MW en 2025, 99.5% solar, 600,651 solicitudes atendidas (630 mil contratos si se cuenta el régimen anterior) — CNE, 2º semestre 2025, vía Review Energy 2-jun-2026 y CPEF.
-   - Factor de emisión 0.444 tCO₂e/MWh: aviso RENE de SEMARNAT del 29-may-2026 ordena usar el factor 2024 mientras SENER publica el de 2025. 3 kWp × 130 × 12 = 4,680 kWh × 0.444 = 2.08 t = 41% de 5.1 t.
+   - Factor de emisión 0.444 tCO₂e/MWh: aviso RENE de SEMARNAT del 29-may-2026 ordena usar el factor 2024 mientras SENER publica el de 2025. 3 kWp × 130 × 12 = 4,680 kWh × 0.444 = 2.08 t = 44% de 4.7 t (promedio de la calculadora corregida el 10-nov-2026; antes 41% de 5.1 t).
    - Ejemplo DAC 400 kWh: 400 × $6.557 + $145.85 = $2,769 + IVA = $3,212 (más DAP). Por eso dice "más de $3,000".
    - Medición neta: los créditos se acumulan 12 meses y el saldo sobrante se liquida a Precio Marginal Local (CNE, FAQ de generación distribuida, ago-2025). De ahí la frase "a precio de mayoreo" en la pregunta 5.
 3. **Link a la versión completa:** no va en el cuerpo porque el artículo de 2021 es solo técnico (fotovoltaica vs termosolar) y no tiene las cuentas. Al republicar esta edición como artículo en dos semanas, ese es el momento de enlazarlo y actualizarlo: rgnera.com/articulos/que-es-la-energia-solar-cuales-son-sus-principales-formas-de/
