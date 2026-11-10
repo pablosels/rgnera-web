@@ -50,19 +50,31 @@
  <h1>Calcula tu huella de carbono</h1>
  <p>Responde con tus gastos del mes y obtén tu huella en CO₂e con metodología insumo-producto y datos oficiales mexicanos (MIP 2018 de INEGI + inventario INECC). Toma un minuto.</p>
 </section>
-<iframe id="marco-calc" src="https://rgnera.com/huella/" title="Calculadora de huella de carbono RGNERA" height="5400"></iframe>
+<iframe id="marco-calc" src="https://rgnera.com/huella/" title="Calculadora de huella de carbono RGNERA" height="900"></iframe>
 <p class="calc-nota">Metodología abierta — <a href="https://github.com/pablosels/rgnera-huella" target="_blank" rel="noopener">ver el código y las fuentes en GitHub</a></p>
 <p class="calc-nota">¿Tienes un negocio? <a href="https://rgnera.com/empresas/">Mide la huella de tu empresa con tus facturas</a></p>
 <script>
+// Alto del marco = alto del CONTENIDO de la calculadora (no scrollHeight: ese
+// nunca es menor que el propio marco, así que crecía 40 px cada 0.8 s sin parar).
+// Se ajusta cuando el contenido cambia (ResizeObserver), tras clics, cambios y
+// <details> que se abren, y con una revisión ligera cada 1.5 s.
 (function(){
- var f=document.getElementById('marco-calc'),previa=0,estable=0,timer=null;
- function ajusta(){try{var d=f.contentDocument||f.contentWindow.document;
-  if(d&&d.documentElement){var h=d.documentElement.scrollHeight;
-   if(h===previa){if(++estable>=6&&timer){clearInterval(timer);timer=null;}}
-   else{previa=h;estable=0;f.style.height=(h+40)+'px';}}}catch(e){}}
- function arranca(){estable=0;if(!timer)timer=setInterval(ajusta,800);ajusta();}
- f.addEventListener('load',arranca);
- window.addEventListener('resize',arranca);
+ var f=document.getElementById('marco-calc'),d=null,pend=false;
+ function alto(){var e=d.documentElement,b=d.body;
+  return Math.ceil(Math.max(e.getBoundingClientRect().height,b?b.getBoundingClientRect().height:0));}
+ function ajusta(){pend=false;try{if(!d)return;var h=alto();
+  if(h>0&&Math.abs(h-f.offsetHeight)>1)f.style.height=h+'px';}catch(e){}}
+ function pide(){if(!pend){pend=true;setTimeout(ajusta,30);}}
+ f.addEventListener('load',function(){
+  try{d=f.contentDocument||f.contentWindow.document;}catch(e){return;}
+  var RO=(f.contentWindow&&f.contentWindow.ResizeObserver)||window.ResizeObserver;
+  if(RO){var o=new RO(pide);o.observe(d.documentElement);if(d.body)o.observe(d.body);}
+  ['click','input','change','toggle'].forEach(function(t){
+   d.addEventListener(t,function(){setTimeout(pide,60);},true);});
+  pide();
+ });
+ window.addEventListener('resize',pide);
+ setInterval(pide,1500);   // red de seguridad (tipografías tardías, rotación); no hace crecer el marco
 })();
 </script>
 </main>
