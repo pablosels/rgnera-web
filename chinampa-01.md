@@ -67,7 +67,7 @@ cree que está.
 **Mide tu huella:** rgnera.com/calculadora
 
 No necesitas recibos ni prepararte. La calculadora arranca con el promedio
-nacional en cada rubro; tú ajustas lo que sepas y ya. Al final vas a ver tu
+en México en cada rubro; tú ajustas lo que sepas y ya. Al final vas a ver tu
 número, cómo te comparas y — lo importante — **por dónde recortar primero**,
 ordenado de mayor a menor impacto.
 
