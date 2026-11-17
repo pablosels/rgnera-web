@@ -192,7 +192,9 @@
     <div class="marca">R G N E R A</div>
     <h1>Calcula tu huella de carbono en un minuto</h1>
     <p>Ingresa tus gastos mensuales aproximados y descubre el impacto ambiental
-       de tu consumo. Tus datos no se guardan ni se comparten.</p>
+       de tu consumo. Lo que escribes se calcula en tu navegador y no nos llega.
+       Solo si al final pides tus resultados por correo nos mandas tu correo y tu
+       resultado.</p>
     <div class="bienq">¿Para quién es el cálculo?</div>
     <div class="bienops">
       <button type="button" class="bienop act" id="op-yo">Solo yo</button>
@@ -204,7 +206,8 @@
       <button type="button" id="p-mas" aria-label="más personas">+</button>
     </div>
     <button type="button" class="bienstart" id="empezar">Empezar</button>
-    <div class="biennota">Gratis · sin registro · resultado al instante</div>
+    <div class="biennota">Gratis · sin registro · resultado al instante ·
+      <a href="#aviso-privacidad" class="liga-aviso">Aviso de privacidad</a></div>
   </div>
 </div>
 <main>
@@ -267,15 +270,22 @@
       <form id="correo-form">
         <div class="correo-fila">
           <input type="email" id="correo-email" required placeholder="tu@correo.com"
+                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Revisa tu correo: tu@correo.com"
                  aria-label="Tu correo electrónico">
           <button type="submit" id="correo-btn">Enviarme mis resultados</button>
         </div>
         <label class="correo-check">
           <input type="checkbox" id="correo-boletin">
-          También quiero recibir el newsletter de RGNERA (artículos de sustentabilidad, sin spam)
+          También quiero recibir La Chinampa, el newsletter de RGNERA (llega por Substack; sin spam)
         </label>
-        <p class="correo-legal">Solo usamos tu correo para enviarte esto.
-        No te suscribimos a nada sin tu permiso.</p>
+        <p class="correo-legal">Responsable: Pablo Seldner (RGNERA), Lago Viedma 81,
+        Argentina Antigua, Miguel Hidalgo, 11270, CDMX. Usamos tu correo y tu
+        resultado para enviarte tus resultados; no guardamos tu correo en ninguna
+        lista (la copia del envío se borra en unos dos meses) y tu resultado se
+        guarda sin correo, para estadística. Solo si marcas la casilla usamos tu
+        correo para enviarte La Chinampa por Substack, hasta que te des de baja
+        (liga en cada envío o escribe a pablo@rgnera.com).
+        <a href="#aviso-privacidad" class="liga-aviso">Aviso de privacidad integral</a>.</p>
       </form>
       <p id="correo-ok" hidden>✅ ¡Enviado! Revisa tu bandeja (y el spam la
       primera vez, por si acaso). 💚</p>
@@ -348,6 +358,90 @@
       rubro toca la acción × cuánto la reduce, menos lo que sube en otro rubro. Sus
       cuentas, fuentes y supuestos están en el código. Metodología abierta:
       <a href="https://github.com/pablosels/rgnera-huella" rel="noopener">github.com/pablosels/rgnera-huella</a>.</p>
+    </details>
+
+    <details id="aviso-privacidad">
+      <summary>Aviso de privacidad</summary>
+      <p>Última actualización: 17 de noviembre de 2026.</p>
+      <p><b>Quién es el responsable.</b> Pablo Seldner (RGNERA), con domicilio en
+      Lago Viedma 81, colonia Argentina Antigua, alcaldía Miguel Hidalgo, C.P.
+      11270, Ciudad de México, es responsable de los datos personales que dejas en
+      esta calculadora. Para cualquier asunto de este aviso escribe a
+      <a href="mailto:pablo@rgnera.com">pablo@rgnera.com</a>.</p>
+      <p><b>Qué datos usamos.</b> Lo que escribes en la calculadora (gastos,
+      kilos, horas de vuelo) se calcula en tu navegador y no nos llega. Solo si
+      pides tus resultados por correo recibimos tu correo electrónico, si quieres
+      La Chinampa y tu resultado: tu huella al año y al mes, cómo se compara con el
+      promedio nacional, tus tres rubros más pesados y tus consejos. No pedimos
+      datos sensibles.</p>
+      <p><b>Para qué los usamos.</b> Finalidad necesaria, la que pediste:
+      enviarte tus resultados por correo. Finalidad opcional, que requiere tu
+      consentimiento: enviarte La Chinampa, el newsletter de RGNERA, solo si
+      marcas la casilla; si no la marcas, recibes tus resultados igual. Además
+      guardamos tu resultado sin tu correo y solo con el mes (Google registra en
+      el historial del archivo cuándo se añadió cada fila, sin tu correo), para
+      estadística de conjunto; no lo usamos para identificarte ni para
+      contactarte.</p>
+      <p><b>Qué guardamos y cuánto tiempo.</b> Si no pides La Chinampa, tu
+      correo no queda en ninguna lista: solo en la copia del correo que te
+      enviamos (y, si rebota, en el aviso de rebote; también en la respuesta
+      automática tipo "fuera de oficina" que conteste a ese correo). Las
+      borramos en unos dos meses: a los 29 días van a la papelera y Gmail las
+      elimina 30 días después. Si tu respuesta automática llega con otro asunto,
+      quizá no la reconozcamos: puedes pedirnos que la borremos. Si nos
+      respondes, tu respuesta se queda en nuestro buzón como cualquier correo;
+      puedes pedirnos que la borremos. Para evitar abusos, hasta 6 horas después
+      de la última vez que pides tus resultados guardamos una huella cifrada de
+      tu correo (no el correo), que se borra sola.
+      Si pides La Chinampa, guardamos tu correo y la fecha en la configuración del
+      programa que manda los correos (no en una hoja de cálculo) hasta darte de
+      alta en Substack, a más tardar en un mes; en ese momento lo borramos de ahí
+      y queda en Substack mientras sigas suscrito. Si no lo pediste tú, responde
+      al correo de resultados y no te damos de alta.</p>
+      <p><b>Con quién los compartimos.</b> No vendemos tus datos. Google (Google
+      LLC) envía el correo y guarda nuestras hojas por cuenta nuestra. Si marcas
+      la casilla de La Chinampa, damos de alta tu correo en Substack, Inc.
+      (Estados Unidos), la plataforma que la envía, que también lo trata como
+      responsable propio según su aviso (substack.com/privacy), por ejemplo para
+      tu cuenta de lector. Al marcar la casilla aceptas que le pasemos tu correo;
+      si no la marcas, Substack no lo recibe. Los servidores de ambos pueden estar
+      fuera de México.</p>
+      <p><b>Cómo darte de baja o retirar tu consentimiento.</b> Cada correo de La
+      Chinampa trae una liga para darte de baja. También puedes escribir a
+      pablo@rgnera.com con el asunto «Mis datos».</p>
+      <p><b>Tus derechos de acceso, rectificación, cancelación y oposición.</b>
+      Escribe a pablo@rgnera.com con el asunto «Mis datos» indicando tu nombre, el
+      correo donde quieres la respuesta, qué derecho ejerces y sobre qué datos.
+      Como el único dato que tenemos es tu correo, acreditamos que es tuyo
+      pidiéndote que escribas desde esa dirección o que respondas a un mensaje
+      nuestro. Si te representa otra persona, envía su identificación y el
+      documento que la acredite. Te respondemos en máximo 20 días hábiles y, si
+      procede, lo hacemos en los 15 días hábiles siguientes. Te entregamos los
+      datos por correo y es gratis. Si pides cancelar, también te damos de baja y
+      borramos tu correo en Substack. La persona a cargo es Pablo Seldner.</p>
+      <p><b>Cookies y visitas.</b> La calculadora no usa cookies. Guarda en tu
+      navegador si calculas para ti o para tu hogar y cuántas personas, para
+      recordarlo; se borra si borras los datos del sitio. Al abrir la página tu
+      dirección IP llega a quienes la sirven: GitHub (aloja la calculadora y guarda
+      la IP por seguridad), Google (las tipografías) y, en rgnera.com, Cloudflare
+      Web Analytics, que cuenta visitas sin cookies.</p>
+      <p><b>Antes de esta versión.</b> Hasta noviembre de 2026 guardábamos en una
+      hoja de Google el correo y el resultado de todas las personas que pedían sus
+      resultados, aunque la página decía que solo usábamos el correo para
+      enviarlos. Ya no lo hacemos: quitamos los correos de esa hoja y estamos
+      borrando el archivo completo, con su historial. Los resultados quedan sin
+      correo y solo con el mes, para estadística; los correos de quienes habían
+      marcado la casilla del newsletter pasaron a La Chinampa, de la que pueden
+      darse de baja cuando quieran; y las copias de los correos ya enviados se
+      borran con la misma regla de unos dos meses.</p>
+      <p><b>Cambios a este aviso.</b> Si lo cambiamos, publicamos la versión nueva
+      aquí mismo con su fecha.</p>
+      <p><b>Si crees que se violaron tus derechos.</b> Si no te respondemos en
+      plazo o no estás de acuerdo con nuestra respuesta, puedes presentar una
+      solicitud de protección de datos ante la Secretaría Anticorrupción y Buen
+      Gobierno, en los 15 días hábiles siguientes a nuestra respuesta o a que venza
+      el plazo (Ley Federal de Protección de Datos Personales en Posesión de los
+      Particulares, DOF 20-03-2025).</p>
     </details>
   </section>
   <footer>
@@ -736,7 +830,7 @@ function calcular(){
 
 /* ---- envío de resultados por correo ---- */
 let ULTIMO = null;
-const CORREO_URL = "https://script.google.com/macros/s/AKfycbwONGrFr5vpK-ku_Z2u3qXyroY9bmS-ifTq1orGSaj7EVAI7ZF9_My6DdEmdCX-1yZQFA/exec";
+const CORREO_URL = "https://script.google.com/macros/s/AKfycbzLNgpIxQEQ39Zet8ZsO0mW1MI0LK6WyMcqgJu4ZYBWsNJxOz6aw8TepdI0gqsSCkzlMA/exec";
 
 document.getElementById("correo-form").addEventListener("submit", async function(ev){
   ev.preventDefault();
@@ -756,10 +850,31 @@ document.getElementById("correo-form").addEventListener("submit", async function
     document.getElementById("correo-form").hidden = true;
     document.getElementById("correo-ok").hidden = false;
   } catch (e) {
-    document.getElementById("correo-error").hidden = false;
+    const err = document.getElementById("correo-error");
+    const MENSAJES = {
+      "cuota": "Hoy ya enviamos todos los correos que podemos. Intenta mañana, por favor.",
+      "repetido": "Ya te mandamos tus resultados varias veces en las últimas horas. Revisa tu bandeja (y el spam).",
+      "ocupado": "Estamos ocupados en este momento. Intenta de nuevo en un minuto.",
+      "correo inválido": "Revisa tu correo: parece incompleto (¿le falta el .com?)."
+    };
+    err.textContent = MENSAJES[e.message] || "No se pudo enviar. Revisa tu conexión e intenta de nuevo.";
+    err.hidden = false;
     btn.disabled = false; btn.textContent = "Enviarme mis resultados";
   }
 });
+
+// la liga "Aviso de privacidad" abre la sección; desde la bienvenida (o si
+// llegas con #aviso-privacidad, p. ej. desde el correo) también la muestra
+function abrirAviso(){
+  const d = document.getElementById("aviso-privacidad"); if (!d) return;
+  if (document.body.classList.contains("intro")) {
+    document.body.classList.remove("intro");
+    if (typeof setQuien === "function") setQuien();
+  }
+  d.open = true;
+  setTimeout(() => d.scrollIntoView({block: "start"}), 0);
+}
+document.querySelectorAll('a[href="#aviso-privacidad"]').forEach(a => a.addEventListener("click", abrirAviso));
 
 construir();
 // perfil promedio: kg/mes de cada categoría con los valores default
@@ -836,6 +951,7 @@ document.getElementById("empezar").onclick = () => {
   }
 })();
 calcular();
+if (location.hash === "#aviso-privacidad") abrirAviso();
 </script>
 </body>
 </html>
