@@ -73,7 +73,7 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Estado (24-nov-2026): AUDITADA, sin programar.** Cada cifra y afirmación del título, el subtítulo y el cuerpo se abrió hoy en su fuente (detalle abajo) y pasó una auditoría independiente, como la #14, la #15 y la #17 (resumen en "Auditoría", abajo). Programar en Substack necesita tu OK.
+**Estado (24-nov-2026): PROGRAMADA en Substack** con OK de Pablo: post 226398634, domingo 27-dic 8:00 a.m. CDMX (trigger_at 2026-12-27T14:00Z), sección Desarrollo Sostenible, audiencia todos, con correo. Verificada por API al crear el borrador: cuerpo, título y subtítulo idénticos a este archivo (commit ffeb32a). Si cambias algo aquí, hay que editar también el post programado. **Antes:** Estado (24-nov-2026): AUDITADA, sin programar. Cada cifra y afirmación del título, el subtítulo y el cuerpo se abrió hoy en su fuente (detalle abajo) y pasó una auditoría independiente, como la #14, la #15 y la #17 (resumen en "Auditoría", abajo). Programar en Substack necesita tu OK.
 
 **Programar:** domingo **27 de diciembre de 2026, 8:00 a.m. CDMX**. **Sección:** Desarrollo Sostenible (id 432978). Es la última edición del año y sale un día antes del carrusel "2026 también tuvo buenas noticias" (lunes 28-dic). La #19 (3-ene, propósitos) no se cruza con esta: no trae buenas noticias ni iNaturalist.
 **CTA protagonista:** **responder el correo** con una buena noticia ambiental del año, de su colonia, su ciudad o su casa (bloque en negritas después de la acción; la P.D. lo pide con una pregunta y ejemplos). La acción de ciencia ciudadana es la de la semana, no un CTA de RGNERA. La liga al artículo de ecoansiedad va en una línea.
