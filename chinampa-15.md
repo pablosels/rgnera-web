@@ -65,7 +65,7 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Estado (23-nov-2026): LISTA PARA REVISAR, sin programar.** La COP31 cerró el domingo 22-nov sin adoptar la decisión de portada; el cuerpo se escribió con los **textos adoptados** (advance unedited versions) publicados en https://unfccc.int/cop31/auvs, no con borradores. Los borradores solo se citan como lo que *no* se aprobó. Programar en Substack necesita tu OK.
+**Estado (24-nov-2026): PROGRAMADA en Substack** con OK de Pablo: post 226360657, domingo 6-dic 8:00 a.m. CDMX (trigger_at 2026-12-06T14:00Z), sección Desarrollo Sostenible, audiencia todos. Verificada por API: cuerpo, título y subtítulo idénticos a este archivo. Si cambias algo aquí, hay que editar también el post programado. **Antes:** Estado (23-nov-2026): LISTA PARA REVISAR, sin programar. La COP31 cerró el domingo 22-nov sin adoptar la decisión de portada; el cuerpo se escribió con los **textos adoptados** (advance unedited versions) publicados en https://unfccc.int/cop31/auvs, no con borradores. Los borradores solo se citan como lo que *no* se aprobó. Programar en Substack necesita tu OK.
 
 **Programar:** domingo **6 de diciembre de 2026, 8:00 a.m. CDMX** (las ediciones programadas llegan hasta la #14 del 29-nov). **Sección:** Desarrollo Sostenible (id 432978): el explicador del sitio es de la categoría sostenibilidad. Si prefieres Cambio Climático y Salud (432977), es un cambio de un clic.
 **CTA protagonista:** la calculadora (paso 1 de la acción) y responder el correo con la meta (PD). El link al explicador va en una línea.

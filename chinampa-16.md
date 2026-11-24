@@ -80,7 +80,7 @@ Nos leemos el domingo. 💚
 
 ## — Para Pablo —
 
-**Estado (23-nov-2026): AUDITADA, sin programar.** Cada cifra y afirmación se abrió y se verificó hoy contra su fuente primaria (abajo) y ya pasó la auditoría independiente, como la #14 y la #15 (detalle en "Auditoría", abajo). No está programada; programar en Substack necesita tu OK.
+**Estado (24-nov-2026): PROGRAMADA en Substack** con OK de Pablo: post 226360658, domingo 13-dic 8:00 a.m. CDMX (trigger_at 2026-12-13T14:00Z), sección Residuos y Economía Circular, audiencia todos. Verificada por API: cuerpo, título y subtítulo idénticos a este archivo. Si cambias algo aquí, hay que editar también el post programado. **Antes:** Estado (23-nov-2026): AUDITADA, sin programar. Cada cifra y afirmación se abrió y se verificó hoy contra su fuente primaria (abajo) y ya pasó la auditoría independiente, como la #14 y la #15 (detalle en "Auditoría", abajo). No está programada; programar en Substack necesita tu OK.
 
 **Programar:** domingo **13 de diciembre de 2026, 8:00 a.m. CDMX** (las posadas arrancan el miércoles 16; el 16-dic-2026 cae en miércoles y el 24 en jueves). **Sección:** Residuos y Economía Circular.
 **CTA protagonista:** responder el correo con su truco (PD). Los dos artículos van en una sola línea, sin negritas. A propósito **no** puse la calculadora ni un "reenvíaselo a quien organiza la posada": competirían con la PD. Si prefieres que el protagonista sea reenviar, cambia la PD por "Reenvíale esto a quien organiza tu posada este año" y quita la pregunta.
